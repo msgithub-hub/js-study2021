@@ -49,6 +49,12 @@
             theme: 'grid',//日历显示格子样式
             calendar: true,//提示当月有哪些国际节日，英文版的没有
             btns: ['clear', 'confirm'],
+            mark: {
+                '0-8-9': '生日'
+                ,'0-12-13': '国殇' //每年12月13日
+                ,'0-0-25': '工资' //每个月25号
+                ,
+            },
             ready: (date) => { //监听日期被切换
                 console.log(date);
                 layer.close(loadIndex);
