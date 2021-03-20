@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        #city {
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="city">哈哈哈</div>
+<p><input id="input" type="text" value="ff">
+    <button class="btn">确定</button>
+</p>
+<h1 class="h1"></h1>
+
+<script src="http://pv.sohu.com/cityjson?ie=utf-8"></script>
+<script src="jquery.min.js"></script>
+<!--<script src="https://map.qq.com/api/js?v=2.exp&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77"></script>-->
+<!--<script type="text/javascript" src="http://map.qq.com/api/js?key=DXGBZ-EHOWG-GUSQ3-IK74G-S52QT-Y2FGG"></script>-->
+<script>
+    $(function () {
+        if (returnCitySN) {
+            var privence = returnCitySN['cname'].substr(0, 3);
+            // console.log(privence);
+            $("#city").prepend("<div class='tr'>" + privence + "</div>")
+        } else {
+            alert('请手动选择')
+        }
+
+        $('.btn').click(function () {
+            let Value = $('#input').val() ;
+            console.log(Value);
+            // console.log(1);
+            // Value = $(".h1").text(Value);
+            $(".h1").text(Value)
+        })
+
+
+    })
+
+
+    // $(function () {
+    // var citylocation,map,marker = null;
+    // var init = function() {
+    //     var center = new qq.maps.LatLng(39.916527,116.397128);
+    //     map = new qq.maps.Map(document.getElementById('container'),{
+    //         center: center,
+    //         zoom: 13
+    //     });
+    //     //获取城市列表接口设置中心点
+    //     citylocation = new qq.maps.CityService({
+    //         complete : function(result){
+    //             map.setCenter(result.detail.latLng);
+    //         }
+    //     });
+    //     //调用searchLocalCity();方法    根据用户IP查询城市信息。
+    //     citylocation.searchLocalCity();
+    //     console.log(citylocation)
+    // }
+
+
+    // $.ajax({
+    //     url: 'https://apis.map.qq.com/ws/location/v1/ip',
+    //     type: 'get',
+    //     dataType: 'json',
+    //     //         data: {
+    //     //             "score": $('.point-number b').text()
+    //     //         },
+    //     success:function (result) {
+    //         if(status==0){
+    //             console.log(result.province)
+    //         }
+    //     },
+    //     error:function () {
+    //         alert("ajax有误")
+    //     }
+    // });
+
+
+</script>
+
+</body>
+</html>

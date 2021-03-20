@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    <input class="input" value=""/>
+    <button>取消</button>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".input").attr("disabled","disabled");//关闭input框
+        $('button').click(function () {
+            $(".input").removeAttr("disabled");
+        })
+    })
+</script>
+</body>
+</html>

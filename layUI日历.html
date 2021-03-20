@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        #test2{
+            width: 22vw;
+            margin-left:40%;
+            /*background: yellowgreen;*/
+            padding: 10px;
+
+            /*height: 60vh;*/
+        }
+        /*#layui-laydate1{*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+        /*}*/
+        /*.layui-laydate-main{*/
+            /*width: 70vw;height: 60vh;*/
+        /*}*/
+        /*.layui-laydate-header,.layui-laydate-content{*/
+             /*width: 100% !important;*/
+         /*}*/
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <span id="testView" style="display: none"></span>
+    <div id="test2"></div>
+</div>
+
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['laydate','layer','jquery'],function(){
+        let laydate = layui.laydate;
+        let layer = layui.layer;
+        let $=layui.jquery;
+        layer.ready(function () {
+            loadIndex = layer.load();
+        });
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#test2',
+            position: 'static',
+            // lang: 'en',
+            theme: 'grid',//日历显示格子样式
+            calendar: true,//提示当月有哪些国际节日，英文版的没有
+            btns: ['clear', 'confirm'],
+            ready: (date) => { //监听日期被切换
+                console.log(date);
+                layer.close(loadIndex);
+                if (date.date === date.date) {
+                        layer.msg(`今天是${date.year}年${date.month}月${date.date}号`,{
+                            // icon:6,
+                            time:6000//6秒关闭（如果不配置，默认是3秒）)
+                        },function (){
+                            $('#testView').empty();
+                            $('#testView').fadeIn(1000);
+                            $('#testView').text(`${date.year}年${date.month}月${date.date}天`);
+                        })
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

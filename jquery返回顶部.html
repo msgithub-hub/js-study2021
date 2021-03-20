@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        *{margin: 0;padding: 0;}
+        .content_body{
+            width: 100%;
+            height: 100vh;
+            background: darkgrey;
+            overflow: auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+
+        }
+        .text{
+            width: 88%;
+            line-height: 5rem;
+            text-align: justify;
+            -moz-text-align-last: right;
+        }
+        .btn{
+            width: 4rem;
+            height: 4rem;
+            line-height: 4rem;
+            background: palevioletred;
+            text-align: center;
+            color: white;
+            position: fixed;
+            right:0.5rem;
+            bottom: 5rem;
+            border-radius: 50%;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <p class="text">
+        [环球时报驻美国特约记者 萧强 环球时报记者 王盼盼]美国职业篮球联赛（NBA）球队休斯敦火箭俱乐部的总经理达雷尔·莫雷，近日将这支球队乃至NBA拖入中美舆论的旋涡。莫雷5日在推特上公开发文，支持日趋暴力的香港示威者，中国驻休斯敦总领事馆发言人6日就此发表谈话，表示震惊和强烈不满。消息传至中国国内，中国网民的怒火被点燃。中国篮协、火箭队的多家中国赞助商和NBA比赛转播平台宣布暂停或终止与火箭队的相关合作。7日，莫雷本人和NBA都发表声明，对此作出解释。他们的解释未能让中国网民满意，反而在美国遭到另一群人的抨击。[环球时报驻美国特约记者 萧强 环球时报记者 王盼盼]美国职业篮球联赛（NBA）球队休斯敦火箭俱乐部的总经理达雷尔·莫雷，近日将这支球队乃至NBA拖入中美舆论的旋涡。莫雷5日在推特上公开发文，支持日趋暴力的香港示威者，中国驻休斯敦总领事馆发言人6日就此发表谈话，表示震惊和强烈不满。消息传至中国国内，中国网民的怒火被点燃。中国篮协、火箭队的多家中国赞助商和NBA比赛转播平台宣布暂停或终止与火箭队的相关合作。7日，莫雷本人和NBA都发表声明，对此作出解释。他们的解释未能让中国网民满意，反而在美国遭到另一群人的抨击。[环球时报驻美国特约记者 萧强 环球时报记者 王盼盼]美国职业篮球联赛（NBA）球队休斯敦火箭俱乐部的总经理达雷尔·莫雷，近日将这支球队乃至NBA拖入中美舆论的旋涡。莫雷5日在推特上公开发文，支持日趋暴力的香港示威者，中国驻休斯敦总领事馆发言人6日就此发表谈话，表示震惊和强烈不满。消息传至中国国内，中国网民的怒火被点燃。中国篮协、火箭队的多家中国赞助商和NBA比赛转播平台宣布暂停或终止与火箭队的相关合作。7日，莫雷本人和NBA都发表声明，对此作出解释。他们的解释未能让中国网民满意，反而在美国遭到另一群人的抨击。[环球时报驻美国特约记者 萧强 环球时报记者 王盼盼]美国职业篮球联赛（NBA）球队休斯敦火箭俱乐部的总经理达雷尔·莫雷，近日将这支球队乃至NBA拖入中美舆论的旋涡。莫雷5日在推特上公开发文，支持日趋暴力的香港示威者，中国驻休斯敦总领事馆发言人6日就此发表谈话，表示震惊和强烈不满。消息传至中国国内，中国网民的怒火被点燃。中国篮协、火箭队的多家中国赞助商和NBA比赛转播平台宣布暂停或终止与火箭队的相关合作。7日，莫雷本人和NBA都发表声明，对此作出解释。他们的解释未能让中国网民满意，反而在美国遭到另一群人的抨击。当地时间5日上午，正在东京准备日本季前赛的莫雷在推特发布了一张图片，其内容正是近几个月香港示威者常喊的一句口号：“为自由而战，和香港在一起。”英国广播公司（BBC）7日的报道称，莫雷的这条推特已被删除。在香港数月来的抗议活动中，暴力活动日趋严重。莫雷支持香港示威者的推特引起中国人愤怒，央视体育频道、浦发银行信用卡中心、李宁公司、腾讯体育等相继发表声明，暂停或终止与火箭队的相关合作。中国篮协6日对莫雷涉港不当言论表示强烈反对，将暂停与火箭队的交流合作事宜。中国男子篮球职业联赛（CBA）7日表示，已取消原定10月19-20日在苏州和NBA发展联盟的全部4场比赛。同日，中国电商平台淘宝、京东等下架火箭队相关产品。
+    </p>
+    <div class="btn">返回顶部</div>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        $('.content_body').scroll(function() {
+            let pageHeight=$('.content_body').scrollTop();
+            console.log(pageHeight);
+            if (pageHeight >= 400) {
+                $(".btn").fadeIn();
+            } else {
+                $(".btn").fadeOut();
+            }
+        });
+        $(".btn").on("touchstart",function() {
+            $(".content_body").animate({scrollTop: 0}, 800);
+        });
+
+    })
+</script>
+</body>
+</html>

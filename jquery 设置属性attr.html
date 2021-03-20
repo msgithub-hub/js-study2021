@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        img{
+            width: 20rem;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <p><input type="button" value="设置属性"></p>
+    <img src="aa.gif" alt="读取图片路径有误" title="aa.gif"/>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        $('input').click(function () {
+            /**设置单属性**/
+            // $('img').attr('src','bb.gif');
+
+            /**设置多属性**/
+            $('img').attr({'src':'bb.gif','title':'bb.gif'});
+        })
+
+    })
+</script>
+</body>
+</html>

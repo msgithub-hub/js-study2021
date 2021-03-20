@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body" style=" width: 90px;height: 90px;background: red;position: absolute;left:0;bottom:0;"></div>
+
+<script>
+    let firstTime = 0;
+    let lastTime = 0;
+    let key = false;
+    document.onmousedown = function () {
+        firstTime = new Date().getTime();
+    };
+    document.onmouseup = function () {
+        lastTime = new Date().getTime();
+        if (lastTime - firstTime < 300) {
+            key = true;
+        }
+    };
+    document.onclick = function () {
+        if (key) {
+            console.log("click");
+            key = false
+        }
+    }
+</script>
+</body>
+</html>

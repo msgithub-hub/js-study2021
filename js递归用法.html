@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    
+</div>
+<script>
+    /**第一个案例**/
+    // let sum=0;
+    // for (let i=0;i<=5;i++){
+    //     sum+=i;
+    // }
+    // console.log(sum);
+
+    /**第二个案列**/
+    function getSum(x) {
+        if (x==1){
+            return 1
+        }
+        return x+getSum(x-1);
+    }
+    let sum1=getSum(6);
+    console.log(sum1);
+</script>
+</body>
+</html>

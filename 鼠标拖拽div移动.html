@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        /*.content_body {*/
+            /*width: 90px;*/
+            /*height: 90px;*/
+            /*background: red;*/
+            /*position: absolute;*/
+            /*left:0;*/
+            /*top:0;*/
+        /*}*/
+    </style>
+</head>
+<body style="overflow: hidden">
+<div class="content_body" style=" width: 90px;
+            height: 90px;
+            background: red;
+            position: absolute;
+            left:0;
+            bottom:0;"></div>
+<script>
+    let div = document.getElementsByClassName('content_body')[0];
+    let disX;
+    // let disY;
+
+    div.onmousedown=function (e) {
+        disX=e.pageX-parseInt(div.style.left);
+        // disY=e.pageY-parseInt(div.style.top);
+
+
+        document.onmousemove=function (e) {
+            let event=e || window.event;
+            console.log(event.pageX +" "+ event.pageY);
+            div.style.left=e.pageX - disX + "px";
+            // div.style.top=e.pageY - disY + "px";
+        };
+
+        document.onmouseup=function () {
+            div.onmousemove=null;
+        }
+
+    }
+
+</script>
+</body>
+</html>

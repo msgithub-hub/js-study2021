@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .content_body {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .top {
+            width: 90%;
+            height: 10vh;
+            /*position: absolute;*/
+            margin-left: 5%;
+            margin-top: 0vh;
+            background: red;
+            /*z-index: 10;*/
+        }
+
+        .bar {
+            width: 90%;
+            height: 20vh;
+            /*position: absolute;*/
+            margin-left: 5%;
+            margin-top: 0vh;
+            background: pink;
+        }
+
+        .bottom {
+            width: 90%;
+            /*height: 140vh;*/
+            line-height: 80px;
+            /*position: absolute;*/
+            margin-left: 5%;
+            margin-top: 0vh;
+            background: yellow;
+        }
+
+        .barNew {
+            position: fixed;
+            /*position: static;*/
+            left:5%;
+            top: 0;
+            background: black;
+
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <div class="top"></div>
+    <div class="bar"></div>
+    <div class="bottom">
+        习近平表示，70年前，中朝正式建立外交关系，这在两党两国关系史上具有划时代的重要意义。朝鲜是最早同新中国建交的国家之一。70年来，在两党两国历代领导人关怀和双方共同努力下，中朝传统友谊经受住了国际风云变幻和时代变迁的考验，不断发展，历久弥坚，深入人心。两国各领域交往合作成果丰硕，不仅有力促进了两国各自社会主义事业繁荣进步，也为维护地区和平稳定发挥了重要积极作用。习近平表示，70年前，中朝正式建立外交关系，这在两党两国关系史上具有划时代的重要意义。朝鲜是最早同新中国建交的国家之一。70年来，在两党两国历代领导人关怀和双方共同努力下，中朝传统友谊经受住了国际风云变幻和时代变迁的考验，不断发展，历久弥坚，深入人心。两国各领域交往合作成果丰硕，不仅有力促进了两国各自社会主义事业繁荣进步，也为维护地区和平稳定发挥了重要积极作用。习近平表示，70年前，中朝正式建立外交关系，这在两党两国关系史上具有划时代的重要意义。朝鲜是最早同新中国建交的国家之一。70年来，在两党两国历代领导人关怀和双方共同努力下，中朝传统友谊经受住了国际风云变幻和时代变迁的考验，不断发展，历久弥坚，深入人心。两国各领域交往合作成果丰硕，不仅有力促进了两国各自社会主义事业繁荣进步，也为维护地区和平稳定发挥了重要积极作用。习近平表示，70年前，中朝正式建立外交关系，这在两党两国关系史上具有划时代的重要意义。朝鲜是最早同新中国建交的国家之一。70年来，在两党两国历代领导人关怀和双方共同努力下，中朝传统友谊经受住了国际风云变幻和时代变迁的考验，不断发展，历久弥坚，深入人心。两国各领域交往合作成果丰硕，不仅有力促进了两国各自社会主义事业繁荣进步，也为维护地区和平稳定发挥了重要积极作用。习近平表示，70年前，中朝正式建立外交关系，这在两党两国关系史上具有划时代的重要意义。朝鲜是最早同新中国建交的国家之一。70年来，在两党两国历代领导人关怀和双方共同努力下，中朝传统友谊经受住了国际风云变幻和时代变迁的考验，不断发展，历久弥坚，深入人心。两国各领域交往合作成果丰硕，不仅有力促进了两国各自社会主义事业繁荣进步，也为维护地区和平稳定发挥了重要积极作用。
+    </div>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        let topHeight = $('.top').height();
+        console.log(topHeight);
+
+        $('.content_body').scroll(function () {
+             //获取页面滚出去的距离
+            let srcollValue = $(this).scrollTop();
+            if (srcollValue >= topHeight) {
+                // $('.bar').addClass('.barNew')
+                $('.bar').css({
+                    position:'fixed',
+                    top:'0vh',
+                    left:'0%'
+                })
+            } else {
+                $('.bar').css({
+                    position:'static',//默认以前状态
+                    top:'0vh',
+                    left:'5%'
+                })
+            }
+        })
+    })
+
+</script>
+</body>
+</html>

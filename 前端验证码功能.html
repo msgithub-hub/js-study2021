@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+
+    <title>前端验证码功能</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgba(0, 0, 0, .1);
+            /* background: #061227; */
+        }
+        form{
+            width: 600px;
+            margin: 100px auto;
+        }
+        .box{
+            height: 40px;
+            line-height: 40px;
+        }
+        .tip{
+            float: left;
+        }
+        input{
+            float: left;
+            width: 200px;
+            height: 30px;
+            padding: 3px 10px;
+            line-height: 30px;
+        }
+        #identify{
+            float: left;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: 2px;
+            background: #365c64;
+            color: #fff;
+            border-radius: 5px;
+            margin: 0 10px;
+        }
+        .btn{
+            margin: 25px auto;
+        }
+        .btn button{
+            width: 200px;
+            height: 36px;
+            line-height: 36px;
+            background: #409eff;
+            border-radius: 5px;
+            border: 0;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+<form action="">
+    <div class="box">
+        <span class="tip">验证码：</span>
+        <input type="text" id="text" value="" placeholder="请输入验证码" autocomplete="off">
+        <span id="identify" onclick="generatedCode()"></span>
+        <a href="javascript:void(0)" onclick="generatedCode()">看不清，换一张</a>
+    </div>
+    <div class="btn"><button onclick="checkCode()">验证</button></div>
+</form>
+</body>
+<script>
+    generatedCode();
+    // 随机生成验证码
+    function generatedCode() {
+        var code1 = "";//生成的验证码
+        var array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+        for (let i = 0; i < 4; i++) {
+            var index = Math.floor(Math.random() * 36);//随机0-35
+            code1 += array[index];
+            document.getElementById("identify").innerHTML = code1;
+        }
+        console.log("二维码是：",code1)
+    };
+    // 验证用户输入
+    function checkCode() {
+        var code2 = document.getElementById("identify").innerHTML;//获取当前生成的验证码
+        code2 = code2.toUpperCase();
+
+        var code3 = document.getElementById("text").value; //客户输入的验证码
+        code3 = code3.toUpperCase();//把客户输入的验证码转换为大写
+        console.log("生成的二维码是:"+ code2 +"\n用户输入的验证码是:"+ code3)
+
+        if (code2 === code3) {
+            alert("恭喜验证成功");
+            // window.open('http://www.baidu.com');
+        } else {
+            alert("输入的验证码不正确");
+            code3 = "";//清空用户输入
+        }
+    }
+</script>
+</html>

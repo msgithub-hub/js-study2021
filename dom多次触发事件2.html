@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        li{
+            width:100px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            background: red;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <ul>
+        <li>a</li>
+        <li>a</li>
+        <li>a</li>
+    </ul>
+</div>
+<script>
+    var li=document.getElementsByTagName("li");
+    for(let i=0;i<li.length;i++){
+        // 闭包函数
+        (function (i) {
+            li[i].addEventListener('click',function () {
+                console.log(i)
+            },false)
+        }(i));
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        *{margin: 0;padding: 0;list-style: none;}
+        body {
+            /*background: black;*/
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .content_body{
+            width: 100vw;
+            height: 100vh;
+            background-color: green;
+            position: relative;
+            overflow: hidden;
+        }
+        .son1{
+            width:500px;
+            height: 500px;
+            text-align: center;
+            line-height: 500px;
+            color: white;
+            background-color: black;
+            position: absolute;
+            top:0%;
+            bottom: 0%;
+            left:0%;
+            right:0%;
+            margin: auto;
+        }
+        .son2{
+            width:50vh;
+            height: 50vh;
+            text-align: center;
+            line-height: 50vh;
+            color: white;
+            background-color: red;
+            position: absolute;
+            top:0%;
+            bottom: 0%;
+            left:0%;
+            right:0%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="content_body">
+    <!--pc端-->
+    <div class="son1">
+        我是pc端
+    </div>
+
+    <!--移动端-->
+    <div class="son2">
+        我是移动端
+    </div>
+</div>
+
+<script>
+    let content_body=document.getElementsByClassName('content_body');
+    let son1=document.getElementsByClassName('son1')[0];
+    let son2=document.getElementsByClassName('son2')[0];
+     if(window.matchMedia("(max-width:767px)").matches){
+         alert("我是移动端");
+         son2.style.display='block';
+         son1.style.display='none';
+     }else{
+         alert("我是pc端");
+         son1.style.display='block';
+         son2.style.display='none';
+     }
+</script>
+</body>
+</html>

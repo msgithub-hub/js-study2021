@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        .btn1{
+            /*width: 20px;*/
+            /*height: 10px;*/
+            background: black;
+            /*text-align: center;*/
+            /*line-height: 10px;*/
+            color: red;
+            display: block;
+            margin-left: 70px;
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <button onclick="show()" style="display:block;margin: 10px auto">点击</button>
+</div>
+<script>
+  var content_body=document.getElementsByClassName("content_body")[0];
+  var btn=content_body.getElementsByTagName('button')[0];
+  var body=document.getElementsByTagName('body')[0];
+  function show() {
+      alert('你好');
+      btn.remove();
+      body.innerHTML='<button class="btn1">点击</button>'
+  }
+</script>
+</body>
+</html>

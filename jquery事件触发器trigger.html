@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    <input type="button" value="btn1" class="btn1"/>
+    <input type="button" value="btn2" class="btn2"/>
+    <div style="width: 200px;height: 200px;background: red;" class="div"></div>
+</div>
+<script src="jquery.min.js"></script>
+<!--<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>-->
+<script>
+    $(function () {
+        $('.div').on('shanshun', function () {
+            console.log("哈哈哈,你很有前途")
+        });
+        $('.btn1').on('click', function () {
+            let res = confirm("我帅不帅");
+            if (res) {
+            // console.log(123);
+            $('.div').trigger('shanshun');
+            }
+        });
+
+        console.log( $.fn.jquery);
+    })
+</script>
+</body>
+</html>

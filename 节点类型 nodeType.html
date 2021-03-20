@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+
+</div>
+<script>
+    var content_body=document.getElementsByClassName("content_body")[0];
+    if(content_body.nodeType===1){
+        document.write("这是元素节点")
+    }else if(content_body===3){
+        alert("这是文本节点")
+    }else if(content_body===8){
+        alert("这是注释节点")
+    }else{
+        alert("我也不知道这是啥")
+    }
+</script>
+</body>
+</html>

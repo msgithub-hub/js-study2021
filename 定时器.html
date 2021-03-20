@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>分：<input type="text" value="0"></label>
+<label>秒：<input type="text" value="0"></label>
+<label>毫秒：<input type="text" value="0"></label>
+<script>
+    var mintext=document.getElementsByTagName('input')[0];
+    var sectext=document.getElementsByTagName('input')[1];
+    var haotext=document.getElementsByTagName('input')[2];
+    var min=0;
+    var sec=0;
+    var hao=0
+    var timer=setInterval(function(){
+        hao++;
+        if(hao===1000){
+            hao=0;
+            sec++
+        }
+        if(sec===60){
+            sec=0;
+            min++
+        }
+
+        mintext.value=min;
+        sectext.value=sec;
+        haotext.value=hao;
+        if(min===3){
+            clearInterval(timer);
+            // sec=0;
+        }
+
+    },0.1)
+</script>
+</body>
+</html>

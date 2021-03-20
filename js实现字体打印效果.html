@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    <b id="aa"></b>
+    <ol style="display:none" id="w">
+        <li>我爱你</li>
+        <li>记得发的手机号</li>
+        <li>和加速度和福克斯大家</li>
+        <li>开始的看看</li>
+    </ol>
+</div>
+<script language="javascript">
+    let index=0;
+    let word=document.getElementById("w").innerText;
+    let wChang=word.length;
+    let aaChang;
+    function type(){
+        document.getElementById("aa").innerText= word.substring(0,index++);
+        aaChang=document.getElementById("aa").innerText.length;
+        if(aaChang===wChang){
+            clearInterval(wordTime);
+            console.log("打字定时器已经取消,00000")
+        }
+    }
+    let wordTime=setInterval(type, 200);
+
+</script>
+</body>
+</html>

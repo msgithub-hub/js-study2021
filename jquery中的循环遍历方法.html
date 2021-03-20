@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>循环遍历</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        html, body {
+            width: 100%;
+            min-height: 100%;
+        }
+
+        body {
+            position: relative;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .content_body {
+            width: 100%;
+            min-height: 100vh;
+            background: yellowgreen;
+            /*background-size: 100% 100%;*/
+            position: relative;
+        }
+
+        .content1 {
+            width: 100%;
+            padding-bottom: 2vw;
+            padding-top: 2vw;
+            display: flex;
+            flex-wrap: wrap;
+            /*margin-top: 1vh;*/
+            /*position: relative;*/
+            background: red;
+        }
+
+        .list_page {
+            width: 40vw;
+            border-radius: 10px;
+            background-color: #52c1dd;
+            padding-bottom: 2vh;
+            margin-left: 7vw;
+            margin-top: 3vw;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 10px 10px 10px #909090;
+        }
+
+        .name, .name1 {
+            width: 100%;
+            height: 15vw;
+            font-size: 1.2rem;
+            line-height: 15vw;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <ul class="content1"></ul>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+
+    $(function () {
+        $.ajax({
+            type: 'get',
+            url: 'list.json',
+            dataType: 'json',
+            data: {
+                // "id": limitId,
+            },
+            success: function (res) {
+                let dataList = res.lists;
+                // console.log(dataList);\
+                /**第一张方法：forEach**/
+                // setTimeout(function () {
+                //     let lis = '';
+                //     dataList.forEach((val) => {
+                //         lis = `<li class="list_page">
+                //                       <p class="name">${val.pic}</p>
+                //                       <p class="name1">第一种方法</p>
+                //              </li>`
+                //         $('.content1').append(lis);
+                //     });
+                // }, 1500);
+
+                /**第二张方法：map**/
+                setTimeout(function () {
+                    let lis = '';
+                    $.map(dataList, function (val, i) {
+                        lis = `<li class="list_page">
+                                       <p class="name">${val.pic}</p>
+                                       <p class="name1">第二种方法</p>
+                               </li>`;
+                        $('.content1').append(lis);
+                    });
+                }, 1500);
+            },
+            error: function (xhr, type) {
+                layer.close(loadingIndex);
+                layer.msg('信号有误');
+            }
+        });
+    })
+
+</script>
+</body>
+</html>

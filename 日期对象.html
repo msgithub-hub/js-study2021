@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    <h1 class="h1"></h1>
+    <h1 class="h2"></h1>
+    <h1 class="h3"></h1>
+    <h1 class="h4"></h1>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+    let date=new Date();
+    //获取完整的年份(4位,1970-????)
+    let year=date.getFullYear();
+    console.log(year);
+    $('.content_body .h1').text(`${year}年`);
+
+    //获取当前月份(0-11,0代表1月)
+    let month=date.getMonth();
+    console.log(month+=1);
+    $('.content_body .h2').text(`${month}月`);
+
+    //获取当前日(1-31)
+    let day=date.getDate();
+    console.log(day);
+    $('.content_body .h3').text(`${day}号`);
+
+    //h获取星期几
+    let week=date.getDay();
+    console.log(week);
+    $('.content_body .h4').text(`星期${week}`);
+
+
+
+    // $('.content_body').text(year)
+    // setInterval(function() {
+    //     console.log(date);
+    // },1000)
+</script>
+
+</body>
+</html>

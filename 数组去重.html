@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组去重</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+
+</div>
+<script>
+
+    // var a=[1,2,3,4,5,3,5,42,0,2,3,0];
+    // function qc(arr){
+    //     var result=[];
+    //     for(var i=0; i<arr.length; i++){
+    //         for(var j=i+1;j<arr.length;j++){
+    //             if(arr[i] === arr[j]){
+    //                 j=++i
+    //             }
+    //         }
+    //         result.push(arr[i])
+    //     }
+    //     document.write(result)
+    // }
+    // qc(a);
+
+    // let arr = [1, 2, 3, 4, 5, 3, 5, 42, 0, 2, 3, 0],
+    //     result = [];
+    // for (let i = 0; i < arr.length; i++) {
+    //     for (let j = i + 1; j < arr.length; j++) {
+    //         if (arr[i] === arr[j]) {
+    //             j = ++i
+    //         }
+    //     }
+    //     result.push(arr[i])
+    // }
+    // console.log(result)
+
+    /**es6的方法**/
+    let arr1=[1,2,2,2,2,"1",34,44,55,34];
+    let newArr=[...new Set(arr1)];
+    // alert(newArr)
+    console.log(newArr)
+</script>
+</body>
+</html>

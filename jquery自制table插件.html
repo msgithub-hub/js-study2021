@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+
+         td{
+             font-size: 15px;
+            text-align: center;
+        }
+         tr th {
+            font-size: 15px;
+            width: 3rem;
+            /*color: red;*/
+        }
+    </style>
+</head>
+<body>
+<div id="content_body">
+
+</div>
+<script src="jquery.min.js"></script>
+<script src="jquery-table.js"></script>
+<script>
+    $(function () {
+        $('#content_body').table(['序号', '姓名', '年龄', '工资',], [
+            {n: '1aa', age: 121, money: 1100},
+            {n: '2aa', age: 131, money: 1200},
+            {n: '3aa', age: 141, money: 1300},
+            {n: '4aa', age: 151, money: 1400},
+        ])
+    })
+</script>
+</body>
+</html>

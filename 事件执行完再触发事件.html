@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        .content_body{
+            width: 100px;
+            height: 100px;
+            background: red;
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="content_body">
+    
+</div>
+<br/>
+<button>点击</button>
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        $("button").click(function () {
+            $('.content_body').toggle(1000,function () {
+                $('button').off('click')
+            });
+
+        })
+    })
+</script>
+</body>
+</html>

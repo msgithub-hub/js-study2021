@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    <p class="IDnum"></p>
+</div>
+<script src="jquery.min.js"></script>
+<script type="module">
+    // import $ from "jquery.min.js";
+    // console.log($);
+    let IDnum=Math.random().toString(36).substring(2);
+    console.log(IDnum);
+    $('.IDnum').text(IDnum)
+</script>
+</body>
+</html>

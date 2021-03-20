@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+
+</div>
+<script>
+    var str = "a;飓风肩甲。sdf噶";
+    function bytesLength(str) {
+        var count = str.length;
+        for (var i = 0; i < str.length; i++) {
+            if (str.charCodeAt(i) > 255) {
+               count++;
+            }
+        }
+        // return count;
+        console.log(count)
+    }
+    bytesLength(str)
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+</head>
+<body>
+<div class="content_body">
+    <img lay-src="layer相册功能/a.jpg"/>
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['flow', 'layer', 'jquery'], () => {
+        let flow = layui.flow;
+        flow.lazyimg();
+    })
+</script>
+</body>
+</html>

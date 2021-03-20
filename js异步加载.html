@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+
+</head>
+<body>
+<div class="content_body" style="width: 20px;height: 20px;background-color: red;">
+
+</div>
+<script>
+    let content_body = document.getElementsByClassName("content_body")[0];
+    let script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "demo.js";
+
+    if (script.readyState) {
+        // IE浏览器方法
+        script.onreadystatechange = function () {
+            if (script.readyState == "complate" || script.readyState == "laded") {
+                text()
+            }
+        }
+    } else {
+        //非IE浏览器方法
+        document.head.appendChild(script);
+        script.onload = function () {
+            content_body.onclick = function () {
+                text();
+            }
+        }
+
+    }
+
+
+
+</script>
+</body>
+</html>

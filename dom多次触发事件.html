@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        /*.content_body{width: 100px;height: 100px;background: red;}*/
+    </style>
+</head>
+<body>
+<div class="content_body" style="width: 100px;height: 100px;background: red;"></div>
+
+<script>
+    var content_body=document.getElementsByClassName('content_body')[0];
+    content_body.addEventListener('click',show,false);
+    content_body.addEventListener('click',function () {
+        content_body.style.background="green"
+    },false);
+    function show(){
+        console.log("aaaaa")
+    }
+</script>
+
+<!--jquery的方法-->
+<!--<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>-->
+<!--<script>-->
+    <!--$(function () {-->
+        <!--$('.content_body').bind('click',function () {-->
+            <!--console.log("aaaaa");-->
+            <!--$(this).css("background","green");-->
+        <!--})-->
+    <!--})-->
+<!--</script>-->
+</body>
+</html>

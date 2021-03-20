@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="../layui/css/layui.css">
+    <style>
+        .content_body{
+            width: 100vw;
+            background-color: #1E9FFF;
+        }
+        .divList {
+            float: left;
+            width: 30vw;
+            height: 30vw;
+            margin-left: 1vw;
+            margin-top: 1vw;
+            position: relative;
+        }
+
+        .list {
+            width: 30vw;
+            height: 30vw;
+            object-fit: cover;
+        }
+
+        .del {
+            position: absolute;
+            color: white;
+            right: 0;
+            top: 0;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body>
+<div id="layer-photos-demo" class="layer-photos-demo content_body">
+    <!--<img layer-pid="图片id，可以不写" layer-src="" src="96ecb719ebc4b745141678e6c2fc1e17888215fd.jpg" alt="图片名">-->
+    <!--<img layer-pid="图片id，可以不写" layer-src="a.jpg" src="a.jpg" alt="图片名">-->
+    <div style="clear:both"></div>
+
+</div>
+<script src="../jquery.min.js"></script>
+<!--<script src="../layer-v3.1.1/layer/layer.js"></script>-->
+<script src="../layui/layui.js"></script>
+<!--<script>-->
+<!--//调用示例-->
+<!--layer.photos({-->
+<!--photos: '#layer-photos-demo'-->
+<!--,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）-->
+<!--});-->
+<!--</script>-->
+<script>
+    $(function () {
+        $.getJSON('photo.json', function (json) {
+            let authors = json.data;
+            console.log(authors);
+            for (let i = 0; i < authors.length; i++) {
+                $("#layer-photos-demo").prepend('<div class="divList">' +
+                    '<img class="list" src=' + authors[i].src + ' />' +
+                    '<b class="del">删除</b>' +
+                    '</div>')
+            }
+            // 相册功能查看图片
+            layui.use(['layer'], function(){
+                layui.layer.photos({
+                    photos: '#layer-photos-demo',
+                    anim: 4 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+                });
+            });
+
+
+            // 删除所选的图片
+            let index=0;
+            $('.content_body').on('click', '.del', function () {
+                $(this).parent(".divList").eq(index).remove();
+                console.log($(".divList").length)
+            })
+        });
+
+    })
+
+</script>
+</body>
+</html>
