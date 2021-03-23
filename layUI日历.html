@@ -6,23 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
     <style>
-        #test2{
-            /*width: 22vw;*/
-            margin-left:10vw;
-            /*!*background: yellowgreen;*!*/
-            /*padding: 10px;*/
-
-            /*height: 60vh;*/
-        }
+        #test2{margin-left:10vw;}
         #test2 .layui-laydate-main{width:80vw;}
         #test2 .layui-laydate-content td,
         #test2 .layui-laydate-content th{width:87px;height: 60px;}
-        .layui-laydate-content table{
-            width: 100%;
-        }
-        .laydate-footer-btns{
-            display: none;
-        }
+        .layui-laydate-content table{width: 100%;}
+        /*.laydate-footer-btns{display: none;}*/
+        .layui-laydate-content td{font-weight: 600;}
         #testView{
             width: 100vw;
             text-align: center;
@@ -34,14 +24,11 @@
             font-weight: 800;
             font-size: 20px;
         }
-        .layui-laydate-content td{
-            font-weight: 600;
-        }
+
     </style>
 </head>
 <body>
 <div class="content_body">
-
     <div id="test2"></div>
     <h1 id="testView" style="display: none"></h1>
 </div>
@@ -52,9 +39,9 @@
         let laydate = layui.laydate;
         let layer = layui.layer;
         let $=layui.jquery;
-        layer.ready(function () {
-            loadIndex = layer.load();
-        });
+        // layer.ready(function () {
+        //     loadIndex = layer.load();
+        // });
         //执行一个laydate实例
         laydate.render({
             elem: '#test2',
@@ -62,6 +49,8 @@
             // lang: 'en',
             theme: '#f56f5b',//日历显示格子样式
             calendar: true,//提示当月有哪些国际节日，英文版的没有
+            // showBottom: false, //是否关闭底部按钮
+            btns: ['now'],
             mark: {
                 '0-8-9': '单顺生日'
                 ,'0-12-13': '国殇' //每年12月13日
@@ -69,12 +58,11 @@
                 ,
             },
             ready: (date) => { //监听日期被切换
-                console.log(date);
-                layer.close(loadIndex);
+                // layer.close(loadIndex);
                 if (date.date === date.date) {
                         layer.msg(`今天是${date.year}年${date.month}月${date.date}号`,{
                             // icon:6,
-                            time:3000//6秒关闭（如果不配置，默认是3秒）)
+                            time:3000
                         },function (){
                             $('#testView').empty();
                             $('#testView').fadeIn(1000);
@@ -83,6 +71,13 @@
                         })
                 }
             },
+            done: (value, date, endDate) => {
+                console.log(`value:${value}`);
+                layer.msg(value||calendar)
+            },
+            // change: function(value, date, endDate){
+            //     console.log(value); //得到日期生成的值，如：2017-08-18
+            // }
         });
     });
 </script>
