@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页传递id到子页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    <ul>
+        <li class="list_page" data-id=1 >大儿子</li>
+        <li class="list_page" data-id=2>小儿子</li>
+    </ul>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".list_page").click(function (e) {
+            // console.log(e)
+            window.location.href = 'indexSon.html?id=' + $(e.currentTarget).attr('data-id');
+        });
+    })
+</script>
+</body>
+</html>

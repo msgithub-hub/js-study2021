@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layui评分</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+</head>
+<body>
+<div class="content_body" id="test1">
+
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use('rate', function(){
+        let rate = layui.rate;
+        //渲染
+        let ins1 = rate.render({
+            elem: '#test1'  //绑定元素
+            ,length:6
+            ,half:true
+            ,text:true
+            ,choose: function(value){
+                if(value > 4) alert( '么么哒' )
+            }
+        });
+    });
+</script>
+</body>
+</html>

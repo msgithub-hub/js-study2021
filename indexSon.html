@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>主页传递id到子页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    <h1 class="h1" style="display: none">我是大儿子</h1>
+    <h2 class="h2" style="display: none">我是小儿子</h2>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+    $(function () {
+        // 获取点击的id
+        function getQueryVariable(variable) {
+            let query = window.location.search.substring(1);
+            let vars = query.split("&");
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                if (pair[0] == variable) {
+                    return pair[1];
+                }
+            }
+            return (false);
+        }
+        var idAll = getQueryVariable('id');
+        console.log(idAll);
+        if(idAll==="1"){
+            $('.h1').show(500)
+        }else if(idAll==="2"){
+            $('.h2').show(500)
+        }
+
+
+
+
+
+
+
+        // function show() {
+        //     var showId=idAll
+        //     if(showId===1){
+        //         console.log('大儿子')
+        //         // $('.h1').show()
+        //     }else if(showId===2){
+        //         console.log('小儿子')
+        //         // $('.h2').show()
+        //     }
+        // }
+        // show()
+    })
+</script>
+</body>
+</html>
