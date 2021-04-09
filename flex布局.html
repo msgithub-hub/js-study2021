@@ -15,14 +15,25 @@
             height: 100vh;
             background: palevioletred;
             display: flex;
-            flex-wrap: wrap;
+            /*flex-wrap: wrap;//自动排列，多出来的自动排到下一行，父级的高度被自动平分*/
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
         }
         .box{
             width: 25%;
-            height: 10vh;
+            padding-bottom: 10px;
+            /*height: 10vh;*/
             background: #007DDB;
-            margin-left: 5%;
-            margin-top: 9px;
+            /*margin-left: 5%;*/
+            /*margin-top: 9px;*/
+        }
+        .box:nth-child(1){
+            background: yellow;
+        }
+        p{
+            font-size: 50px;
+            font-variant : small-caps;
         }
     </style>
 </head>
@@ -35,6 +46,7 @@
     <div class="box"></div>
     <div class="box"></div>
     <div class="box"></div>
+    <p>asdfghjk</p>
 </div>
 
 </body>

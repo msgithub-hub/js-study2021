@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layUipage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        .content_body {
+            width: 100vw;
+            height: 100vh;
+            /*background: skyblue;*/
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        ul {
+            width: 90vw;
+            padding-bottom: 20px;
+            border: 1px solid #8D8D8D;
+        }
+
+        .box {
+            width: 100%;
+            /*margin-left: 0%;*/
+            margin-top: 10px;
+            background: yellow;
+            /*border: 1px solid red;*/
+            /*display: flex;*/
+            /*align-items: center;*/
+            /*justify-content: space-around;*/
+        }
+
+        .head {
+            width: 100%;
+            /*height: 44px;*/
+            line-height: 24px;
+            font-size: 20px;
+        }
+
+        .name {
+            width: 100%;
+            height: 44px;
+            line-height: 44px;
+            font-size: 20px;
+            font-weight: 400;
+            /* background: red; */
+            margin-left: 0%;
+            text-align: center;
+            letter-spacing: 2px;
+
+            /*display: block;*/
+            /*overflow: hidden;*/
+            /*word-break: keep-all;*/
+            /*white-space: nowrap;*/
+            /*text-overflow: ellipsis;*/
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <ul class="listData"></ul>
+    <div id="page"></div>
+
+
+</div>
+<script src="jquery.min.js"></script>
+<script src="./layui/layui.js"></script>
+<script>
+    $(function () {
+        getInfo();
+    });
+
+    function getInfo() {
+        $.ajax({
+            type: "get",
+            url: "data.json",
+            dataType: 'json',
+            success:(data)=> {
+                // var dataLen=data.books;
+                console.log(data.books);
+                layui.use(['laypage', 'jquery'], function () {
+                    let laypage = layui.laypage,
+                        $ = layui.jquery;
+                    laypage.render({
+                        elem: 'page',
+                        count: data.books.length, //数据总数，从服务端得到
+                        limit: 4,   //每页条数设置
+                        layout: ['count', 'prev', 'page', 'next','skip'],
+                        jump: function (obj) {
+                            console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+                            console.log(obj.limit); //得到每页显示的条数
+                            document.querySelector('.listData').innerHTML = function (){
+                                let arr = [];
+                                let thisData = data.books.concat().splice(obj.curr * obj.limit - obj.limit, obj.limit);
+                                layui.each(thisData, function (index,item) {
+                                    let text =`
+                                               <li class="box">
+
+                                                   <div class="name">${item.title}</div>
+                                                   <p class="head">${item.desc}</p>
+                                               </li>
+                                               `;
+                                    arr.push(text);
+                                });
+                                return arr.join('');
+                            }();
+                        }
+                    });
+                })
+            }
+        });
+    }
+</script>
+</body>
+</html>
