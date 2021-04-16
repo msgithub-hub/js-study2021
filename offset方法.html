@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>offset</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style>
+        .round{
+            width: 20px;height: 20px;border-radius: 50%;background: #1E9FFF;
+            position: absolute;
+            left: 20px;
+            top:220px;
+        }
+        .round1{
+            z-index:10;
+            animation:mymove 3s ease-out forwards;
+        }
+        @-webkit-keyframes mymove{
+            0% {
+                left: 20px;
+                top: 220px;
+            }
+            70% {
+                left:250px;
+                top: 2px;
+            }
+            100% {
+                left:250px;
+                top: 20px;
+            }
+        }
+        .rq{
+            width: 80px;height: 80px;background: yellow;
+            position: absolute;
+            left: 220px;
+            top:20px
+        }
+    </style>
+</head>
+<body>
+<script src="jquery.min.js"></script>
+<div class="content_body" style="position: relative">
+    <p class="round"></p>
+    <div class="rq"></div>
+</div>
+<script>
+    $(function () {
+        $('.round').click(function () {
+            $(this).addClass('round1')
+        })
+    })
+</script>
+</body>
+</html>
