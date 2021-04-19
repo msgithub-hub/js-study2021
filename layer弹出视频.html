@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layer弹出视频</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        .content_body {
+            width: 100vw;
+            height: 100vh;
+            background: skyblue;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <button type="button" class="layui-btn layui-btn-warm" id="layer">点击</button>
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['layer', 'jquery'], function () {
+        let layer = layui.layer,
+            $ = layui.jquery;
+        $(function () {
+            let loadstr =
+                '<video width="100%" height="100%"  controls="controls" autobuffer="autobuffer"  autoplay="autoplay" loop="loop">' +
+                      '<source src="./video1.mp4" type="video/mp4"></source>' +
+                '</video>'
+            $('#layer').click(function () {
+                layer.open({
+                    type: 1,
+                    title: '',
+                    area: ['1000px', '500px'],
+                    shade: 0.7,
+                    maxmin: false ,//允许全屏最小化
+                    anim: 1 ,//0-6的动画形式，-1不开启
+                    content: loadstr,
+                });
+            })
+        })
+    })
+</script>
+</body>
+</html>

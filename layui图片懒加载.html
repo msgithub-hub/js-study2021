@@ -8,13 +8,16 @@
 </head>
 <body>
 <div class="content_body">
-    <img lay-src="layer相册功能/a.jpg"/>
+    <img src="loading.gif" lay-src="layer相册功能/a.jpg"/>
 </div>
 <script src="./layui/layui.js"></script>
 <script>
     layui.use(['flow', 'layer', 'jquery'], () => {
         let flow = layui.flow;
-        flow.lazyimg();
+        // setTimeout(function () {
+            flow.lazyimg();
+        // },2000)
+
     })
 </script>
 </body>

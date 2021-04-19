@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layui导航栏</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        .content_body {
+            width: 100vw;
+            height: 100vh;
+            background: #dddddd;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .content_body h2{
+            display: none;
+        }
+        .ulFa {
+            width: 100%;
+            /*padding-bottom: 8px;*/
+            background: #009688;
+        }
+
+        .navUl {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        /*.layui-nav-child {*/
+            /*display: none;*/
+            /*min-width: 100%;*/
+            /*position: absolute;*/
+            /*line-height: 36px;*/
+            /*padding: 5px 0;*/
+            /*box-shadow: 0 2px 4px rgb(0 0 0 / 12%);*/
+            /*border: 1px solid #d2d2d2;*/
+            /*background-color: #fff;*/
+            /*z-index: 100;*/
+            /*border-radius: 2px;*/
+            /*white-space: nowrap;*/
+        /*}*/
+
+        /*媒体查询*/
+        @media (max-width: 1000px) {
+            .content_body h2 {
+                display: block;
+                color: red;
+            }
+
+            .navUl {
+                display: none;
+                width: 100%;
+                padding-bottom: 10px;
+                background: orangered;
+            }
+            .navUl li{
+                width: 100%;
+                text-align: center;
+
+            }
+            .navUl li a{
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <h2>点击展开</h2>
+    <div class="ulFa">
+        <ul class="layui-nav layui-bg-green  navUl" lay-shrink="all" lay-filter="">
+            <li class="layui-nav-item layui-this zhankai">
+                <a href="javascript:void(0)">最新活动</a>
+                <dl class="layui-nav-child zhankai1"> <!-- 二级菜单 -->
+                    <dd><a href="javascript:void(0)">1移动模块</a></dd>
+                    <dd><a href="javascript:void(0)">2后台模版</a></dd>
+                    <dd><a href="javascript:void(0)">3电商平台</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item "><a href="javascript:void(0)">产品</a></li>
+            <li class="layui-nav-item"><a href="javascript:void(0)">大数据</a></li>
+            <li class="layui-nav-item zhankai">
+                <a href="javascript:void(0)">解决方案</a>
+                <dl class="layui-nav-child zhankai1"> <!-- 二级菜单 -->
+                    <dd><a href="javascript:void(0)">移动模块</a></dd>
+                    <dd><a href="javascript:void(0)">后台模版</a></dd>
+                    <dd><a href="javascript:void(0)">电商平台</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">社区</a></li>
+        </ul>
+    </div>
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['element', 'layer', 'jquery'], () => {
+        let element = layui.element;
+        let $=layui.jquery;
+        let layer=layui.layer;
+        $(function () {
+            let index = layer.load(1,{
+                time: 5 * 1000,
+                shade: [0.9,'#ddd']
+            });
+//             layer.close(index);
+            $('.content_body h2').on('click', function () {
+                $('.navUl').slideToggle();
+            });
+            // $('.zhankai').on('click',function () {
+            //     $(this).find('.zhankai1').slideDown().siblings('.zhankai1').slideUp()
+            // })
+        })
+
+    })
+</script>
+</body>
+</html>
