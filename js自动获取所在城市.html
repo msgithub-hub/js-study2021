@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        .content_body {
+            display: flex;
+        }
+        #daditu{
+            width: 100vw;
+            background: pink;
+            padding-bottom: 10px;
+        }
+        #map-container{
+            width: 100vw;
+            height: 400px;
+            margin: 20px auto;
+        }vw
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <i class="layui-icon layui-icon-location" style="color: red;"></i>
+    <select name="myid" id="myid">
+        <option class="ready">定位中</option>
+    </select>
+
+
+</div>
+<!--//地图-->
+<div class="map" id="map-container"></div>
+<script src="./jquery.min.js"></script>
+<script src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
+
+<!--腾讯地图-->
+<script src="http://map.qq.com/api/js?key=DXGBZ-EHOWG-GUSQ3-IK74G-S52QT-Y2FGG"></script>
+
+<!--百度地图-->
+<!--<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>-->
+
+<script src="./layui/layui.js"></script>
+<script>
+    $(function () {
+        /**                 自动识别所在的省份                  **/
+        let geolocation = new qq.maps.Geolocation("DXGBZ-EHOWG-GUSQ3-IK74G-S52QT-Y2FGG", "myapp");
+        // let positionNum = 0;
+        let options = {timeout: 500};
+        function showPosition(position) {
+            let province = position.province; //省份
+            let city = position.city; //城市
+            let lng=position.lng;
+            let lat=position.lat;
+            privence = position.province;
+            city = position.city;
+            lng=position.lng;
+            lat=position.lat;
+            console.log(position);
+            let addressMy = `<option class='tr' selected>${privence}${city}</option>`;
+            $("#myid").prepend(addressMy);
+            // (lng, lat)
+            var citylocation,map,marker = null;
+            //给外层的a标签加上url，方便一会点击小地图的时候直接跳转。
+            function newMapGo(id,lat,lng){
+                var markUrl = 'https://apis.map.qq.com/tools/poimarker' +
+                    '?marker=coord:' + lat + ',' + lng +
+                    '&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp';
+                //给位置展示组件赋值
+                document.getElementById(id).href = markUrl;
+            }
+            //需要外层元素id和对应地址的经纬度
+            function newMap(id,lat,lng){
+                var center = new qq.maps.LatLng(lat, lng);
+                var map = new qq.maps.Map(document.getElementById(id), {
+                    center: center,
+                    zoom: 18
+                });
+                //调用城市服务信息
+                citylocation = new qq.maps.CityService({
+                    complete : function(results){
+                        map.setCenter(results.detail.latLng);
+                        if (marker != null) {
+                            // marker.setMap(null);
+                        }
+                        //设置marker标记
+                        marker = new qq.maps.Marker({
+                            map: map,
+                            position: results.detail.latLng
+                        });
+                    }
+                });
+                citylocation.searchCityByLatLng(center);
+                newMapGo('aToMap',lat,lng);
+            }
+            //给id,经纬度
+            newMap('map-container',lat,lng)
+
+        }
+        geolocation.getLocation(showPosition, options);
+
+
+    });
+</script>
+</body>
+</html>

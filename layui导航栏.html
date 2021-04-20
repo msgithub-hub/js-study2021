@@ -50,6 +50,11 @@
 
         /*媒体查询*/
         @media (max-width: 1000px) {
+            .content_body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             .content_body h2 {
                 display: block;
                 color: red;
@@ -101,16 +106,21 @@
 </div>
 <script src="./layui/layui.js"></script>
 <script>
+    let loadIndex;
     layui.use(['element', 'layer', 'jquery'], () => {
         let element = layui.element;
         let $=layui.jquery;
         let layer=layui.layer;
+
         $(function () {
-            let index = layer.load(1,{
-                time: 5 * 1000,
-                shade: [0.9,'#ddd']
+            layer.ready(function() {
+                loadIndex = layer.load(1,{
+                    time: 5 * 1000,
+                    shade: [0.9,'#ddd']
+                });
             });
-//             layer.close(index);
+
+            // layer.close(loadIndex);
             $('.content_body h2').on('click', function () {
                 $('.navUl').slideToggle();
             });
