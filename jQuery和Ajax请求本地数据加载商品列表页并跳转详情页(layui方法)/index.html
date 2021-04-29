@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>投票</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="layui/css/layui.css">
+</head>
+<body>
+
+
+<!--加载列表-->
+<div class="content_body">
+    <ul class="content1"></ul>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="layui/layui.js"></script>
+<script>
+    layui.use(['flow', 'layer'], function () {
+        var layer = layui.layer,
+            flow = layui.flow,
+            loadingIndex;
+        let limit = 5;
+
+        // function showRule() {
+        //     if (window.localStorage.getItem('isShow') !== '1') {
+        //         $('.rule').fadeIn();
+        //         window.localStorage.setItem('isShow', '1')
+        //     }
+        //     listAjax();
+        // }
+
+        /**ajax请求**/
+        function listAjax() {
+            flow.load({
+                elem: '.content1', //流加载容器
+                isAuto: true,
+                isLazyimg: true,
+                done: function (page, next) { //执行下一页的回调
+                    // layer.ready(function () {
+                    //     loadingIndex = layer.load();
+                    // });
+                    $.ajax({
+                        type: 'post',
+                        url: 'data.json',
+                        dataType: 'json',
+                        data: {
+                            // "id": limitId,
+                        },
+                        success: function (res) {
+                            // layer.close(loadingIndex);
+                            let dataList = res.books;
+                            setTimeout(function () {
+                                let lis = [];
+                                var startIndex = (page - 1) * limit,
+                                    endIndex = startIndex + limit,
+                                    list = dataList.slice(startIndex, endIndex);
+                                list.forEach((val, i) => {
+                                    // data-id="${val.id }"
+                                // <a href='listData.html?id="${val.id }"'>
+                                    lis.push(`<li class="list_page" data-id="${val.id }">
+
+                                                  <img lay-src="${val.imgUrl}" class="content_img">
+                                                  <div class="voteDiv">
+                                                       <p class="voteTitle">票数:</p>
+                                                       <p class="voteNum">0</p>
+                                                  </div>
+                                                    <!--<img src="image/noCheck.png" class="noCheck">-->
+                                                  <p style="width:100%;text-align:center">${val.title}</p>
+                                                  <p class="nameList">${(page - 1) * limit + i + 1}</p>
+                                                <!--</a>-->
+                                               </li>
+                                             `)
+                                });
+                                next(lis.join(''), endIndex < dataList.length);
+                            }, 500);
+
+
+                        },
+                        error: function (xhr, type) {
+                            layer.close(loadingIndex);
+                            layer.msg('信号有误');
+                        }
+                    });
+
+                }
+            });
+        }
+
+        $(function () {
+            listAjax();
+            $('.banner').click(function () {
+                $('.rule').fadeIn();
+            });
+            $('.close').click(function () {
+                $('.rule').fadeOut();
+            });
+
+            /**点击说说跳转详情页面**/
+            $(".content1").on("click", ".list_page", function (e) {
+                console.log(e)
+                window.location.href = 'listData.html?id=' + $(e.currentTarget).attr('data-id');
+            });
+
+
+        })
+    })
+</script>
+</body>
+</html>

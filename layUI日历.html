@@ -42,7 +42,13 @@
         // layer.ready(function () {
         //     loadIndex = layer.load();
         // });
-        //执行一个laydate实例
+        //执行一个laydate实例\
+        function date(){
+            if(date.month == 4 && date.date == 22){
+                layer.msg(`${date.month}-${date.date},啥都不是`);
+            }
+        }
+
         laydate.render({
             elem: '#test2',
             position: 'static',
@@ -52,32 +58,57 @@
             // showBottom: false, //是否关闭底部按钮
             btns: ['now'],
             mark: {
-                '0-8-9': '单顺生日'
-                ,'0-12-13': '国殇' //每年12月13日
-                ,'0-0-25': '工资' //每个月25号
+                '0-4-1': '愚人节',
+                '0-4-22': '啥都不是'
+                ,'0-12-13': '国殇'
+                ,'0-0-25': '工资'
                 ,
             },
-            ready: (date) => { //监听日期被切换
-                // layer.close(loadIndex);
-                if (date.date === date.date) {
-                        layer.msg(`今天是${date.year}年${date.month}月${date.date}号`,{
-                            // icon:6,
-                            time:3000
-                        },function (){
-                            $('#testView').empty();
-                            $('#testView').fadeIn(1000);
-                            $('#testView').text(`今天是:${date.year}年${date.month}月${date.date}号`);
-
-                        })
+            change: function(value, date,){
+                // console.log(date);
+                // if(date.month == 4 && date.date == 1){
+                //     layer.msg(`${value}愚人节`);
+                // }
+                if(date.month == 4 && date.date == 22){
+                    layer.msg(`${date.month}-${date.date},啥都不是`);
                 }
             },
-            done: (value, date, endDate) => {
-                console.log(`value:${value}`);
-                layer.msg(value||calendar)
-            },
-            // change: function(value, date, endDate){
-            //     console.log(value); //得到日期生成的值，如：2017-08-18
-            // }
+
+            ready: (date) => { //监听日期被切换
+                console.log(date);
+
+                // if (date.date === date.date) {
+                //         layer.msg(`今天是${date.year}年${date.month}月${date.date}号`,{
+                //             // icon:6,
+                //             time:3000
+                //         },function (){
+                //             $('#testView').empty();
+                //             $('#testView').fadeIn(1000);
+                //             $('#testView').text(`今天是:${date.year}年${date.month}月${date.date}号`);
+                //
+                //         })
+                // }
+                if(date.month == 4 && date.date == 22){
+                    layer.msg(`${date.month}月${date.date}号,啥都不是`,{
+                        // icon:6,
+                        time:3000
+                    },function (){
+                        $('#testView').empty();
+                        $('#testView').fadeIn(1000);
+                        $('#testView').text(`今天是:${date.year}年${date.month}月${date.date}号`);
+                    });
+                }
+            }
+
+
+
+
+            // done: (value,mark) => {
+            //     // console.log(mark);
+            //     // console.log(`value:${value}`);
+            //     layer.msg(value||calendar)
+            // },
+
         });
     });
 </script>

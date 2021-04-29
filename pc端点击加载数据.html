@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+
+        #list-new {
+            width: 90%;
+            /*min-height: 100%;*/
+            /*background: red;*/
+            padding-bottom: 1%;
+            /*border: 1px solid red;*/
+            margin: 10px auto 0px;
+        }
+
+        .js-load-more {
+            width: 20%;
+            /*background: red;*/
+            text-align: center;
+            line-height: 2rem;
+            cursor: pointer;
+            margin-left: 40%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .list {
+            /*float: left;*/
+            width: 100%;
+            background: lightgray;
+            padding-bottom: 1%;
+            margin-top: 2%;
+            /*margin-left: 3%;*/
+        }
+
+        .name {
+            width: 90%;
+            /*padding-left: 10px;*/
+            text-align: left;
+            font-size: 22px;
+        }
+
+        .text {
+            width: 100%;
+            height: 8rem;
+            overflow: auto;
+            /*background:green;*/
+            font-size: 22px;
+            letter-spacing: 1px;
+            line-height: 2rem;
+        }
+    </style>
+</head>
+<body>
+<ul id="list-new">
+    <div style="clear: both"></div>
+</ul>
+<!--加载更多按钮-->
+<div class="js-load-more">加载更多...</div>
+
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(function () {
+        let pageStart = 1,
+            pageSize = 4,
+            limit = 4,
+            start = 0;
+        function getData() {
+            $.ajax({
+                type: 'GET',
+                url: 'list1.json',
+                dataType: 'json',
+                success: function (res) {
+                    let str = '',
+                        data = res.result,
+                        rData = data.slice(start, start + limit);
+                    $.each(rData, function (i, obj) {
+                        str = `<li class="list" >
+                                   <p class="name">${obj.name}</p>
+                                   <p class="text">${obj.words}</p>
+                               </li>`;
+                        $('#list-new').append(str);
+                    });
+                    start = start + limit;
+                    if(rData.length <= 1){
+                        $(".js-load-more").off("click");
+                        $('.js-load-more').text('没有了')
+                    }
+                },
+                error: function () {
+                    alert('Ajax error!');
+                }
+            });
+        }
+        /*首次加载*/
+        getData(pageStart, pageSize);
+
+        /*监听加载更多*/
+        $('.js-load-more').click(function () {
+            pageStart++;
+            getData(pageStart, pageSize);
+        });
+    });
+</script>
+</body>
+
+</html>

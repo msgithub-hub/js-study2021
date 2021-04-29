@@ -25,7 +25,7 @@
     $(function () {
         if (returnCitySN) {
             var privence = returnCitySN['cname'].substr(0, 3);
-            // console.log(privence);
+            console.log(returnCitySN);
             $("#city").prepend("<div class='tr'>" + privence + "</div>")
         } else {
             alert('请手动选择')
