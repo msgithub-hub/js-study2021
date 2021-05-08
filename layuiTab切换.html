@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+</head>
+<body>
+<div class="content_body">
+    <div class="layui-tab layui-tab-brief" lay-filter="demo">
+        <ul id="tabHeader" class="layui-tab-title">
+            <li class="layui-this">标题1</li>
+            <li>标题2</li>
+            <li>标题3</li>
+            <li>标题4</li>
+            <li>标题5</li>
+        </ul>
+        <div id="tabBody" class="layui-tab-content">
+            <div class="layui-tab-item layui-show xxx">内容1</div>
+        </div>
+    </div>
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['element', 'layer', 'jquery'], () => {
+        let element = layui.element;
+        let $ = layui.jquery;
+        let layer = layui.layer;
+
+        $(function () {
+            // layer.ready(function() {
+            //     loadIndex = layer.load(1,{
+            //         time: 5 * 1000,
+            //         shade: [0.9,'#ddd']
+            //     });
+            // });
+
+            // layer.close(loadIndex);
+            element.on('tab(demo)', function(data){
+                console.log(data.index);
+                if(data.index==0){
+                    layer.msg('你点击了标题1',{
+                        time:1500
+                    },function () {
+                        $('.xxx').empty();
+                        $('.xxx').text('内容1')
+                    })
+                }else if(data.index==1){
+                    layer.msg('你点击了标题2',{
+                        time:1500
+                    },function () {
+                        $('.xxx').empty();
+                        $('.xxx').text('内容2')
+                    })
+                }else if(data.index==2){
+                    layer.msg('你点击了标题3',{
+                        time:1500
+                    },function () {
+                        $('.xxx').empty();
+                        $('.xxx').text('内容3')
+                    })
+                }
+            });
+
+        })
+
+    })
+</script>
+</body>
+</html>
