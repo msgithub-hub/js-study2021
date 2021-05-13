@@ -1,0 +1,163 @@
+<style>
+    .head{
+        width: 100%;
+        /*background: #FD482C;*/
+    }
+    .layui-nav-tree1{
+        display: none;
+    }
+    .head h2 {
+        display: none;
+    }
+
+    .ulFa {
+        width: 1200px;
+        margin: 0 auto;
+
+    }
+    .navUl {
+        width: 100%;
+        margin: 0 auto;
+        /*background: #FD482C;*/
+    }
+    .layui-nav-item2{
+        margin-left: 6%;
+        width: 150px;
+        /*color: white;*/
+        text-align: center;
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+    }
+    /*.layui-nav-item2>a{*/
+        /*color: white !important;*/
+    /*}*/
+
+    /*.layui-nav-item2 dl{*/
+        /*padding: 0;*/
+    /*}*/
+
+    .close {
+        display: none;
+    }
+
+    /*媒体查询*/
+    @media (max-width: 900px) {
+        .navUl {
+           display: none;
+        }
+        .layui-nav-tree1{
+            display: block;
+        }
+
+        .head h2 {
+            display: block;
+            color: red;
+            width: 100%;
+            text-align: center;
+            line-height: 10vh;
+        }
+
+        .close {
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        /*垂直导航栏*/
+        .layui-nav-tree1{
+            padding-top:10vh;
+            width: 80%;
+            display: none;
+            background: rgba(0,0,0,0.5) !important;
+        }
+
+        .layui-nav-item1 a{
+            /*text-align: center;*/
+            font-size: 1.2rem !important;
+            letter-spacing: 1px;
+        }
+        .layui-nav-child1 dd{
+            padding-left: 30px;
+        }
+        .layui-nav-child1 dd a{
+            font-size: 1rem !important;
+        }
+        .layui-nav-child1{
+            background: black !important;
+        }
+    }
+</style>
+<div class="head layui-bg-cyan">
+    <h2>点击展开</h2>
+    <div class="ulFa">
+        <!--移动端-->
+        <ul class="layui-nav layui-nav-tree layui-nav-side layui-nav-tree1" lay-shrink="all">
+            <i class="layui-icon layui-icon-close close" style="font-size: 20px;color: white"></i>
+            <li class="layui-nav-item layui-nav-item1">
+                <a href="index.html">产品</a>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item1">
+                <a href="javascript:;">解决方案</a>
+                <dl class="layui-nav-child layui-nav-child1">
+                    <dd><a href="index3.html">1移动模块</a></dd>
+                    <dd><a href="javascript:void(0)">2后台模版</a></dd>
+                    <dd><a href="javascript:void(0)">3电商平台</a></dd>
+                </dl>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item1">
+                <a href="index3.html">大数据</a>
+            </li>
+
+
+
+            <li class="layui-nav-item layui-nav-item1">
+                <a href="javascript:;">no解决方案</a>
+                <dl class="layui-nav-child layui-nav-child1">
+                    <dd><a href="javascript:void(0)">移动模块</a></dd>
+                    <dd><a href="javascript:void(0)">后台模版</a></dd>
+                    <dd><a href="javascript:void(0)">电商平台</a></dd>
+                </dl>
+            </li>
+
+
+        </ul>
+
+        <!--pc端-->
+        <ul class="layui-nav  navUl"  lay-shrink="all" >
+            <i class="layui-icon layui-icon-close close" style="font-size: 20px;color: white"></i>
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="index.html">产品</a>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)">最新活动</a>
+                <dl class="layui-nav-child zhankai1"> <!-- 二级菜单 -->
+                    <dd><a href="index3.html">1移动模块</a></dd>
+                    <dd><a href="javascript:void(0)">2后台模版</a></dd>
+                    <dd><a href="javascript:void(0)">3电商平台</a></dd>
+                </dl>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="index2.html">大数据</a>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)">解决方案</a>
+                <dl class="layui-nav-child zhankai1"> <!-- 二级菜单 -->
+                    <dd><a href="javascript:void(0)">移动模块</a></dd>
+                    <dd><a href="javascript:void(0)">后台模版</a></dd>
+                    <dd><a href="javascript:void(0)">电商平台</a></dd>
+                </dl>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)">社区</a>
+            </li>
+        </ul>
+
+    </div>
+</div>
