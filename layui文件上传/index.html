@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        .prieve{
+            width: 70vw;
+            background: yellow;
+            display: flex;
+        }
+        .img{
+            width: 70px;height: 70px;margin-left: 5%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <button type="button" class="layui-btn" id="test1">
+        <i class="layui-icon">&#xe67c;</i>选择图片
+    </button>
+    <button type="button" class="layui-btn" id="btnUpload">开始上传</button>
+    <div class="prieve">
+        <!--<img src="" class="img">-->
+    </div>
+    <img id="myPic" src="" width="500" />
+
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['upload', 'jquery'], function () {
+        var upload = layui.upload;
+        var $ = layui.$;
+        //执行实例
+        var uploadInst = upload.render({
+            elem: '#test1'                //绑定元素
+            , url: 'office.json'      //上传接口
+            , size: 5000                   //传输大小5000k
+            , exts: 'jpg|png|gif|docx'        //可传输文件的后缀
+            , accept: 'file'              //video audio images
+
+            , data: { Parm1: "hello", Parm2: "world" }    //额外传输的参数
+            , headers:{token:'sasasasa'}                   //额外添加的请求头
+            , auto: false                                 //自动上传,默认是打开的
+            , bindAction: '#btnUpload'                    //auto为false时，点击触发上传
+            , multiple: true                             //多文件上传
+            , number: 5  ,                             //multiple:true时有效
+            before: function(obj){
+                // obj.preview(function(index, file, result){
+                //     // const imgArr = re.data.arr.img.split(',');
+                //     // for (let x = 0; x < result.length; x++) {
+                //     //     const imgL = `<img src="${result[x]}" class="img">`;
+                //     //     if (result[x]) {
+                //     //         $('.prievei').append(imgL);
+                //     //     }
+                //     // }
+                // });
+            }
+            , done: function (res, index, upload) {                      //传输完成的回调
+                console.log(index);
+                console.log(upload);
+                // $('.prieve').append("src", res.data.src);
+            }
+            , error: function () {                         //传输失败的回调
+                //请求异常回调
+            }
+        });
+    });
+</script>
+</body>
+</html>

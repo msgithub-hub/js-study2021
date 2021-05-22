@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css" media="all">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            position: relative;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .content_body {
+            width: 100%;
+            height: 100%;
+            /*padding-top:70px;*/
+            /*background: red;*/
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .layui-table-page>div {
+            text-align: center !important;
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <table class="" id="demo"></table>
+    <script type="text/html" id="toolbarDemo">
+        <div class="layui-btn-container">
+            <!--<button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>-->
+            <!--<button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>-->
+            <!--<button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>-->
+        </div>
+    </script>
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['element', 'layer', 'jquery', 'table'], () => {
+        let element = layui.element;
+        let $ = layui.jquery;
+        let table = layui.table;
+        table.render({
+            elem: '#demo'
+            , page: {layout: [ 'count', 'prev', 'page', 'next', 'skip']}
+            , url: 'table.json' //数据接口
+            // ,height: 500
+            ,cellMinWidth: 80
+            , cols: [[ //标题栏
+                {field: 'id', title: 'ID', sort: true,align: 'center'}
+                , {field: 'username', title: '用户名',align: 'center'}
+                , {field: 'email', title: '邮箱',align: 'center'}
+                , {field: 'sign', title: '签名',align: 'center'}
+                , {field: 'sex', title: '性别',align: 'center'}
+                , {field: 'city', title: '城市',align: 'center'}
+                , {field: 'experience', title: '积分', sort: true,align: 'center'}
+            ]],
+            limit:10,
+            response: {
+                statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+            },
+            parseData: function (res) { //将原始数据解析成 table 组件所规定的数据
+                let result;
+                console.log(res.data);
+                if(this.page.curr){
+                    result = res.data.slice(this.limit*(this.page.curr-1),this.limit*this.page.curr);
+                }
+                else{
+                    result=res.data.slice(0,this.limit);
+                }
+                return {
+                    "code": res.code, //解析接口状态
+                    "count": res.data.length, //解析数据长度
+                    "data": result //解析数据列表
+                };
+            },
+            toolbar: '#toolbarDemo',
+            defaultToolbar: ['filter', 'print', 'exports', {
+                title: '提示' //标题
+                ,layEvent: 'LAYTABLE_TIPS' //事件名，用于 toolbar 事件中使用
+                ,icon: 'layui-icon-tips' //图标类名
+            }]
+        })
+    })
+</script>
+</body>
+</html>

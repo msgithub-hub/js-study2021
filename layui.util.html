@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+</head>
+<body>
+<div class="content_body"></div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use('util', function(){
+        var util = layui.util;
+        //执行
+        util.fixbar({
+            bar1: true,
+            bar2:true,
+            click: function(type){
+                console.log(type);
+                if(type == 'bar1'){
+                    alert('点击了bar1')
+                }else if(type == 'bar2'){
+                    alert('点击了bar2')
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>

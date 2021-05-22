@@ -2,6 +2,9 @@
     .head{
         width: 100%;
         /*background: #FD482C;*/
+        /*position: fixed;*/
+        /*top:0;*/
+        /*z-index: 100;*/
     }
     .layui-nav-tree1{
         display: none;
@@ -11,18 +14,18 @@
     }
 
     .ulFa {
-        width: 1200px;
+        width: 100%;
         margin: 0 auto;
 
     }
     .navUl {
-        width: 100%;
+        width: 1200px;
         margin: 0 auto;
         /*background: #FD482C;*/
     }
     .layui-nav-item2{
         margin-left: 6%;
-        width: 150px;
+        /*width: 150px;*/
         /*color: white;*/
         text-align: center;
         font-size: 0.6rem;
@@ -32,9 +35,9 @@
         /*color: white !important;*/
     /*}*/
 
-    /*.layui-nav-item2 dl{*/
-        /*padding: 0;*/
-    /*}*/
+    .layui-nav-item2 dl{
+        padding: 0;
+    }
 
     .close {
         display: none;
@@ -66,10 +69,10 @@
 
         /*垂直导航栏*/
         .layui-nav-tree1{
-            padding-top:10vh;
+            padding-top:40vw;
             width: 80%;
             display: none;
-            background: rgba(0,0,0,0.5) !important;
+            background: rgba(0,0,0,0.7) !important;
         }
 
         .layui-nav-item1 a{
@@ -93,7 +96,7 @@
     <div class="ulFa">
         <!--移动端-->
         <ul class="layui-nav layui-nav-tree layui-nav-side layui-nav-tree1" lay-shrink="all">
-            <i class="layui-icon layui-icon-close close" style="font-size: 20px;color: white"></i>
+            <i class="layui-icon layui-icon-close  close" style="font-size: 20px;color: white;font-weight: 600"></i>
             <li class="layui-nav-item layui-nav-item1">
                 <a href="index.html">产品</a>
             </li>
@@ -101,7 +104,7 @@
             <li class="layui-nav-item layui-nav-item1">
                 <a href="javascript:;">解决方案</a>
                 <dl class="layui-nav-child layui-nav-child1">
-                    <dd><a href="index3.html">1移动模块</a></dd>
+                    <dd><a href="index2.html">1移动模块</a></dd>
                     <dd><a href="javascript:void(0)">2后台模版</a></dd>
                     <dd><a href="javascript:void(0)">3电商平台</a></dd>
                 </dl>
@@ -121,28 +124,33 @@
                     <dd><a href="javascript:void(0)">电商平台</a></dd>
                 </dl>
             </li>
-
+            <li class="layui-nav-item layui-nav-item1">
+                <a href="javascript:void(0)">哈哈</a>
+            </li>
+            <li class="layui-nav-item layui-nav-item1">
+                <a href="javascript:void(0)">你好啦</a>
+            </li>
 
         </ul>
 
         <!--pc端-->
         <ul class="layui-nav  navUl"  lay-shrink="all" >
             <i class="layui-icon layui-icon-close close" style="font-size: 20px;color: white"></i>
-            <li class="layui-nav-item layui-nav-item2">
+            <li class="layui-nav-item layui-nav-item2 ">
                 <a href="index.html">产品</a>
             </li>
 
             <li class="layui-nav-item layui-nav-item2">
                 <a href="javascript:void(0)">最新活动</a>
                 <dl class="layui-nav-child zhankai1"> <!-- 二级菜单 -->
-                    <dd><a href="index3.html">1移动模块</a></dd>
+                    <dd><a href="index2.html">1移动模块</a></dd>
                     <dd><a href="javascript:void(0)">2后台模版</a></dd>
                     <dd><a href="javascript:void(0)">3电商平台</a></dd>
                 </dl>
             </li>
 
             <li class="layui-nav-item layui-nav-item2">
-                <a href="index2.html">大数据</a>
+                <a href="index3.html">大数据</a>
             </li>
 
             <li class="layui-nav-item layui-nav-item2">
@@ -156,6 +164,12 @@
 
             <li class="layui-nav-item layui-nav-item2">
                 <a href="javascript:void(0)">社区</a>
+            </li>
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)">哈哈</a>
+            </li>
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)">你好啦</a>
             </li>
         </ul>
 

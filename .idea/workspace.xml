@@ -2,15 +2,136 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="078ee347-d4cc-407a-afc4-f10ee39a28b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/layui导航栏/head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layui导航栏/head.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layui导航栏/index2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layui导航栏/index3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layui导航栏/loadHF.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/layui布局.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui-table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-table/table.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui.util.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui字体.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui文件上传/bb.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui文件上传/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui文件上传/office.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layUipage.html" beforeDir="false" afterPath="$PROJECT_DIR$/layUipage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layui导航栏.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/modules/code.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui/css/modules/code.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/modules/laydate/default/laydate.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/css/modules/layer/default/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/transfer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui/layui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui导航栏/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui导航栏/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui导航栏/head.js" beforeDir="false" afterPath="$PROJECT_DIR$/layui导航栏/head.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui导航栏/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui导航栏/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui导航栏/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui导航栏/index2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui导航栏/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui导航栏/index3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui导航栏/layui/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/layui导航栏/layui/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui布局.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui布局.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,52 +145,30 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui导航栏/index.html">
+      <file leaf-file-name="layui-table.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/layui-table/layui-table.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
-              <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+            <state relative-caret-position="1096">
+              <caret line="89" column="18" lean-forward="true" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index2.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui导航栏/index2.html">
+      <file leaf-file-name="table.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui-table/table.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui导航栏/index3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/layui导航栏/head.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+            <state relative-caret-position="26">
+              <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
               <folding>
-                <element signature="n#ul#1;n#div#0;n#div#0;n#!!top" />
-                <element signature="n#style#0;n#i#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#ul#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#30#292#0" />
+                <element signature="e#298#586#0" />
+                <element signature="e#592#853#0" />
+                <element signature="e#859#1121#0" />
+                <element signature="e#1127#1388#0" />
+                <element signature="e#1394#1655#0" />
+                <element signature="e#1661#1922#0" />
+                <element signature="e#1928#2190#0" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/layui导航栏/head.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -87,6 +186,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>photo_rongqi</find>
+      <find>layui-nav-side</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,16 +199,26 @@
         <option value="$PROJECT_DIR$/layui图片懒加载.html" />
         <option value="$PROJECT_DIR$/layUI日历.html" />
         <option value="$PROJECT_DIR$/laydate记事本.html" />
-        <option value="$PROJECT_DIR$/layuiTab切换.html" />
         <option value="$PROJECT_DIR$/layUipage.html" />
-        <option value="$PROJECT_DIR$/layui布局.html" />
         <option value="$PROJECT_DIR$/layui导航栏.html" />
         <option value="$PROJECT_DIR$/layui导航栏/loadHF.js" />
-        <option value="$PROJECT_DIR$/layui导航栏/head.js" />
-        <option value="$PROJECT_DIR$/layui导航栏/index2.html" />
+        <option value="$PROJECT_DIR$/layui文件上传/office.json" />
+        <option value="$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/index.html" />
+        <option value="$USER_HOME$/Desktop/金茂/movement.html" />
+        <option value="$PROJECT_DIR$/layui文件上传/index.html" />
+        <option value="$PROJECT_DIR$/layui字体.html" />
         <option value="$PROJECT_DIR$/layui导航栏/index3.html" />
-        <option value="$PROJECT_DIR$/layui导航栏/index.html" />
+        <option value="$PROJECT_DIR$/layui导航栏/index2.html" />
+        <option value="$PROJECT_DIR$/layui布局.html" />
+        <option value="$PROJECT_DIR$/layui导航栏/layui/css/layui.css" />
         <option value="$PROJECT_DIR$/layui导航栏/head.html" />
+        <option value="$PROJECT_DIR$/layui导航栏/head.js" />
+        <option value="$PROJECT_DIR$/layui导航栏/index.html" />
+        <option value="$PROJECT_DIR$/layui.util.html" />
+        <option value="$PROJECT_DIR$/layuiTab切换.html" />
+        <option value="$PROJECT_DIR$/layui-table/layui/test.html" />
+        <option value="$PROJECT_DIR$/layui-table/table.json" />
+        <option value="$PROJECT_DIR$/layui-table/layui-table.html" />
       </list>
     </option>
   </component>
@@ -118,9 +228,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-39" />
+    <option name="y" value="3" />
     <option name="width" value="1251" />
     <option name="height" value="984" />
   </component>
@@ -139,6 +249,11 @@
             <path>
               <item name="js-study2021" type="b2602c69:ProjectViewProjectNode" />
               <item name="js-study2021" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-study2021" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-study2021" type="462c0819:PsiDirectoryNode" />
+              <item name="layui-table" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="js-study2021" type="b2602c69:ProjectViewProjectNode" />
@@ -162,6 +277,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev2\js-study2021\layui-table" />
+      <recent name="D:\dev2\js-study2021\layui文件上传" />
       <recent name="D:\dev2\js-study2021\layui导航栏" />
     </key>
   </component>
@@ -192,27 +309,31 @@
       <workItem from="1619999721750" duration="9834000" />
       <workItem from="1620345687664" duration="5529000" />
       <workItem from="1620606087504" duration="6494000" />
-      <workItem from="1620865048320" duration="17868000" />
+      <workItem from="1620865048320" duration="31775000" />
+      <workItem from="1621210060288" duration="14539000" />
+      <workItem from="1621383240930" duration="13822000" />
+      <workItem from="1621665061248" duration="2930000" />
+      <workItem from="1621668100539" duration="3754000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47707000" />
+    <option name="totallyTimeSpent" value="96659000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19301033" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19459888" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -229,93 +350,31 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/layUI日历.html">
+    <entry file="file://$PROJECT_DIR$/layui-table/table.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="51" column="40" selection-start-line="51" selection-end-line="51" selection-end-column="40" />
+        <state relative-caret-position="26">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#30#292#0" />
+            <element signature="e#298#586#0" />
+            <element signature="e#592#853#0" />
+            <element signature="e#859#1121#0" />
+            <element signature="e#1127#1388#0" />
+            <element signature="e#1394#1655#0" />
+            <element signature="e#1661#1922#0" />
+            <element signature="e#1928#2190#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layUipage.html">
+    <entry file="file://$PROJECT_DIR$/layui-table/layui/test.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2392">
-          <caret line="92" column="50" selection-start-line="92" selection-start-column="50" selection-end-line="92" selection-end-column="50" />
+        <state relative-caret-position="182">
+          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3432">
-          <caret line="132" column="9" lean-forward="true" selection-start-line="106" selection-end-line="132" selection-end-column="9" />
-          <folding>
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dl#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/webGS-XM/LM_yearParty/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/webGS-XM/LM_yearParty/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/webGS-XM/LM_yearParty/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui布局.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1144">
-          <caret line="44" column="27" lean-forward="true" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding>
-            <element signature="e#294#352#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layUI日历.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="51" column="40" selection-start-line="51" selection-end-line="51" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layUipage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1638">
-          <caret line="63" column="9" selection-start-line="61" selection-start-column="7" selection-end-line="63" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3406">
-          <caret line="131" column="6" lean-forward="true" selection-start-line="109" selection-start-column="4" selection-end-line="131" selection-end-column="6" />
-          <folding>
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dl#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏.html" />
     <entry file="file://$PROJECT_DIR$/layuiTab切换.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
@@ -327,9 +386,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
           <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-end-line="51" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -361,26 +417,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layUI日历.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3120">
-          <caret line="120" column="15" lean-forward="true" selection-start-line="115" selection-start-column="12" selection-end-line="120" selection-end-column="15" />
-          <folding>
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dl#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏.html" />
     <entry file="file://$PROJECT_DIR$/pc端点击加载数据.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
@@ -416,13 +453,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="105" column="15" selection-start-line="101" selection-start-column="12" selection-end-line="105" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/listData.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -451,27 +481,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layUI日历.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="51" column="40" selection-start-line="51" selection-end-line="51" selection-end-column="40" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js读取移动端屏幕或者pc端.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="82" column="6" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="82" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layuiTab切换.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -496,41 +509,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layui/css/layui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="11623" selection-start-line="1" selection-start-column="11623" selection-end-line="1" selection-end-column="11623" />
-          <folding>
-            <element signature="e#63937#64076#2" expanded="true" />
-            <element signature="e#65530#65669#2" expanded="true" />
-            <element signature="e#66217#66356#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="106" column="6" lean-forward="true" selection-start-line="106" selection-start-column="6" selection-end-line="106" selection-end-column="6" />
-          <folding>
-            <element signature="n#li#0;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#dl#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏/layui/css/layui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="1" column="48964" selection-start-line="1" selection-start-column="48964" selection-end-line="1" selection-end-column="48964" />
-          <folding>
-            <element signature="e#63937#64076#2" expanded="true" />
-            <element signature="e#65530#65669#2" expanded="true" />
-            <element signature="e#66217#66356#2" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏.html" />
     <entry file="file://$PROJECT_DIR$/layui导航栏/loadHF.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -547,17 +526,101 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/layUipage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="-234">
+          <caret line="74" column="40" selection-start-line="74" selection-end-line="74" selection-end-column="40" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui文件上传/office.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="70" column="51" lean-forward="true" selection-start-line="70" selection-start-column="51" selection-end-line="70" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui文件上传/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/金茂/movement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="236" column="25" lean-forward="true" selection-start-line="231" selection-start-column="24" selection-end-line="236" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui字体.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏/index3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="29" column="23" lean-forward="true" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/事件冒泡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-726" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/layui布局.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="28" column="9" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="28" selection-end-column="9" />
+        <state relative-caret-position="546">
+          <caret line="81" column="53" lean-forward="true" selection-start-line="81" selection-start-column="53" selection-end-line="81" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="1" column="52355" selection-start-line="1" selection-start-column="52355" selection-end-line="1" selection-end-column="52355" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui/lay/modules/code.js" />
+    <entry file="file://$PROJECT_DIR$/layui/layui.all.js" />
+    <entry file="file://$PROJECT_DIR$/layUI日历.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="48" column="49" lean-forward="true" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui.util.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layuiTab切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="45" column="42" selection-start-line="45" selection-start-column="42" selection-end-line="45" selection-end-column="42" />
           <folding>
-            <element signature="e#294#352#0" />
+            <element signature="e#978#1005#0" />
           </folding>
         </state>
       </provider>
@@ -565,40 +628,76 @@
     <entry file="file://$PROJECT_DIR$/layui导航栏/head.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏/index3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="40" column="9" lean-forward="true" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/layui导航栏/head.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        <state relative-caret-position="3302">
+          <caret line="127" column="51" selection-start-line="127" selection-start-column="51" selection-end-line="127" selection-end-column="51" />
           <folding>
-            <element signature="n#ul#1;n#div#0;n#div#0;n#!!top" />
             <element signature="n#style#0;n#i#0;n#ul#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#ul#1;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui-table/layui/css/layui.css" />
+    <entry file="file://$PROJECT_DIR$/layui-table/layui/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="58" lean-forward="true" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3536">
+          <caret column="11623" selection-start-column="11623" selection-end-column="11623" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui/layui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="31" column="9" selection-start-line="8" selection-start-column="8" selection-end-line="31" selection-end-column="9" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui-table/table.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="8" lean-forward="true" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+          <folding>
+            <element signature="e#30#292#0" />
+            <element signature="e#298#586#0" />
+            <element signature="e#592#853#0" />
+            <element signature="e#859#1121#0" />
+            <element signature="e#1127#1388#0" />
+            <element signature="e#1394#1655#0" />
+            <element signature="e#1661#1922#0" />
+            <element signature="e#1928#2190#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui-table/layui-table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1096">
+          <caret line="89" column="18" lean-forward="true" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
         </state>
       </provider>
     </entry>
