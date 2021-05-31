@@ -29,7 +29,7 @@
 
         .bar {
             width: 90%;
-            height: 20vh;
+            height: 30vh;
             /*position: absolute;*/
             margin-left: 5%;
             margin-top: 0vh;
@@ -68,23 +68,26 @@
 <script>
     $(function () {
         let topHeight = $('.top').height();
-        console.log(topHeight);
+        // console.log(topHeight);
 
         $('.content_body').scroll(function () {
              //获取页面滚出去的距离
             let srcollValue = $(this).scrollTop();
+            console.log(srcollValue);
             if (srcollValue >= topHeight) {
-                // $('.bar').addClass('.barNew')
+
                 $('.bar').css({
                     position:'fixed',
                     top:'0vh',
-                    left:'0%'
-                })
+                    height: '15vh',
+                    transition: '1.5s',
+                    background:'green',
+                });
             } else {
                 $('.bar').css({
                     position:'static',//默认以前状态
-                    top:'0vh',
-                    left:'5%'
+                    height: '30vh',
+                    background: 'pink',
                 })
             }
         })

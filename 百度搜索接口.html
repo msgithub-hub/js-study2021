@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+        body {
+            position: relative;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .content_body {
+            width: 100%;
+            height: 100%;
+            /*padding-top:70px;*/
+            /*background: red;*/
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+        .form{
+
+            width: 80%;
+            margin: 10vh auto;
+            /*background: #1E9FFF;*/
+        }
+        .layui-form-item{
+            width: 100%;
+            /*margin-left: 3%;*/
+            /*background: indianred;*/
+        }
+        .layui-input-block1{
+            width: 100%;
+            display: flex;
+        }
+        .word{
+            width: 70%;
+            margin-left: 0;
+        }
+        .submit{
+            background: #FD482C;
+        }
+
+        /*媒体查询*/
+        @media (max-width: 900px) {
+            .content_body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .layui-input-block {
+                margin:0px auto;
+                /*min-height: 36px;*/
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <form action="http://www.baidu.com.cn/s" method="get" class="layui-form form">
+        <div class="layui-form-item">
+            <div class="layui-input-block layui-input-block1">
+                <input type="text" name="word" required  lay-verify="required" placeholder="在这里输入文字.." autocomplete="off" class="layui-input word">
+                <button class="layui-btn submit" lay-submit lay-filter="formDemo">搜索</button>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['form', 'layer', 'jquery'], (layer) => {
+        let form=layui.form;
+        let $ = layui.jquery;
+
+        $(function () {
+            //监听提交
+            form.on('submit(formDemo)', function(data){
+                layer.msg(JSON.stringify(data.field));
+                return false;
+            });
+        })
+
+    })
+</script>
+</body>
+</html>

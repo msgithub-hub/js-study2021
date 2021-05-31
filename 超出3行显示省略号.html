@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            position: relative;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .content_body {
+            width: 100%;
+            height: 100%;
+            /*padding-top:70px;*/
+            /*background: red;*/
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .textRQ {
+            width: 80%;
+            background: yellow;
+            padding-bottom: 20px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .text {
+            line-height: 1.5rem;
+            text-align: justify;
+            -moz-text-align-last: right;
+        }
+
+        .show, .hide {
+            padding: 3px;
+            background: #FD482C;
+            color: white;
+            border-radius: 8px;
+            font-size: 8px;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            cursor: pointer;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .ShowOrHide {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+        }
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <div class="textRQ">
+        <p class="layui-word-aux text ShowOrHide">
+            习近平表示，70年前，中朝正式建立外交关系，这在两党两国关系史上具有划时代的重要意义。朝鲜是最早同新中国建交的国家之一。70年来，在两党两国历代领导人关怀和双方共同努力下，中朝传统友谊经受住了国际风云变幻和时代变迁的考验，不断发展，历久弥坚，深入人心。两国各领域交往合作成果丰硕，不仅有力促进了两国各自社会主义事业繁荣进步，也为维护地区和平稳定发挥了重要积极作用。习近平表示，70年前，中朝正式建立外交关系，这在两党两国关系史上具有划时代的重要意义。朝鲜是最早同新中国建交的国家之一。70年来，在两党两国历代领导人关怀和双方共同努力下，中朝传统友谊经受住了国际风云变幻和时代变迁的考验，不断发展，历久弥坚，深入人心。两国各领域交往合作成果丰硕，不仅有力促进了两国各自社会主义事业繁荣进步，也为维护地区和平稳定发挥了重要积极作用。</p>
+        <p class="show">展开</p>
+        <p class="hide">收起</p>
+    </div>
+
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['layer', 'jquery'], (layer) => {
+        let $ = layui.jquery;
+        $(function () {
+            /**第一种写法**/
+            $('.show').click(function () {
+                $('.text').removeClass('ShowOrHide');
+                $(this).hide();
+                $('.hide').show(500)
+            });
+            $('.hide').click(function () {
+                $('.text').addClass('ShowOrHide');
+                $(this).hide();
+                $('.show').show(500)
+            })
+
+            /**第二种写法**/
+            // $('.show').click(function () {
+            // if ($('.show').text() == '展开') {
+            //     $('.show').click(function () {
+            //         $('.text').removeClass('ShowOrHide');
+            //         $('.show').text('收起')
+            //     })
+            // } else if ($('.show').text() == '收起') {
+            //     $('.show').click(function () {
+            //         $('.text').addClass('ShowOrHide');
+            //         $('.show').text('展开')
+            //     })
+            // }
+            // });
+
+        })
+
+    })
+</script>
+</body>
+</html>
