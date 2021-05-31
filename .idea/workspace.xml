@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="078ee347-d4cc-407a-afc4-f10ee39a28b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/中英文切换/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/中英文切换/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/中英文切换/language.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/中英文切换/microsoft.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/百度搜索接口.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/超出3行显示省略号.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layui-table/layui-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui-table/layui-table.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/固定导航栏.html" beforeDir="false" afterPath="$PROJECT_DIR$/固定导航栏.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/超出3行显示省略号.html" beforeDir="false" afterPath="$PROJECT_DIR$/超出3行显示省略号.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,7 +51,7 @@
       <file leaf-file-name="超出3行显示省略号.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/超出3行显示省略号.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="522">
               <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
             </state>
           </provider>
@@ -135,7 +127,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-39" />
     <option name="y" value="3" />
     <option name="width" value="1251" />
@@ -213,12 +205,12 @@
       <workItem from="1621665061248" duration="2930000" />
       <workItem from="1621668100539" duration="4426000" />
       <workItem from="1621815169144" duration="18697000" />
-      <workItem from="1622419525800" duration="5487000" />
+      <workItem from="1622419525800" duration="6011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121515000" />
+    <option name="totallyTimeSpent" value="122039000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
@@ -571,7 +563,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/超出3行显示省略号.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="522">
           <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
         </state>
       </provider>
