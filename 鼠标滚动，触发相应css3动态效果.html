@@ -57,17 +57,16 @@
             from {
                 will-change: transform; /*优化动画卡顿1*/
                 opacity: 0; /*初始状态 透明度为0*/
-                transform: translateX(-100px); /*初始状态 文档流下100px*/
+                transform: translateY(100px); /*初始状态 文档流下100px*/
             }
             to {
                 opacity: 1; /*结尾状态 透明度为1*/
-                transform: translateX(0px); /*初始状态 恢复正常位置*/
+                transform: translateY(0px); /*初始状态 恢复正常位置*/
             }
         }
         @media (max-width: 900px) {
             .content_body{
                 width: 90%;
-                /*margin: 0 auto;*/
             }
             .vanwee{
                 width: 100%;
@@ -100,7 +99,7 @@
 <script>
     $(function () {
         // 获取浏览器可见区域高度
-        var window_height = document.documentElement.clientHeight||$('.content_body').height();
+        var window_height = document.documentElement.clientHeight;
 
         // 用户手动修改浏览器可见区域高度时修改变量
         window.onresize = function () {

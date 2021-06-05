@@ -1,0 +1,139 @@
+<style>
+    .head {
+        width: 100%;
+        /*background: #FD482C;*/
+        /*position: fixed;*/
+        /*top:0;*/
+        /*z-index: 100;*/
+    }
+
+    .head h2 {
+        display: none;
+    }
+
+    .ulFa {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+    .navUl {
+        width: 1200px;
+        margin: 0 auto;
+        /*background: #FD482C;*/
+    }
+
+    .layui-nav-item2 {
+        margin-left: 6%;
+        /*width: 150px;*/
+        /*color: white;*/
+        text-align: center;
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+    }
+    .layui-nav-item2 dl {
+        padding: 0;
+    }
+
+    .close {
+        display: none;
+    }
+
+    /*媒体查询*/
+    @media (max-width: 900px) {
+        .head {
+            position: relative;
+        }
+        .ulFa {
+            display: none;
+            width: 95vw;
+            height: 100vh;
+            overflow: auto;
+            position: fixed;
+            right: 0;
+            top: 0;
+            z-index: 10;
+            background: rgba(0, 0, 0, 0.7);
+        }
+        .layui-nav {
+            background-color:  transparent;
+        }
+        .navUl {
+            width: 90%;
+            /*background: #007DDB;*/
+            margin-top:15vh;
+        }
+        .navUl li dl{
+            margin-top: -10px;
+        }
+        .layui-nav-item2{
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 0%;
+        }
+
+        .head h2 {
+            display: block;
+            color: red;
+            width: 100%;
+            text-align: center;
+            line-height: 10vh;
+        }
+
+        .close {
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: -30px;
+            font-size: 30px;
+            color: yellow
+            ;font-weight: 600;
+        }
+    }
+</style>
+<div class="head layui-bg-cyan">
+    <h2>点击展开</h2>
+    <div class="ulFa">
+
+        <!--pc端-->
+        <ul class="layui-nav  navUl" lay-shrink="all">
+            <i class="layui-icon layui-icon-close close" style=""></i>
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="index.html" class="a">产品</a>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)" class="a">最新活动</a>
+                <dl class="layui-nav-child zhankai1"> <!-- 二级菜单 -->
+                    <dd><a href="index2.html">1移动模块</a></dd>
+                    <dd><a href="javascript:void(0)">2后台模版</a></dd>
+                    <dd><a href="javascript:void(0)">3电商平台</a></dd>
+                </dl>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="index3.html" class="a">大数据</a>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)" class="a">解决方案</a>
+                <dl class="layui-nav-child zhankai1"> <!-- 二级菜单 -->
+                    <dd><a href="javascript:void(0)">移动模块</a></dd>
+                    <dd><a href="javascript:void(0)">后台模版</a></dd>
+                    <dd><a href="javascript:void(0)">电商平台</a></dd>
+                </dl>
+            </li>
+
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)" class="a">社区</a>
+            </li>
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)" class="a">哈哈</a>
+            </li>
+            <li class="layui-nav-item layui-nav-item2">
+                <a href="javascript:void(0)" class="a">你好啦</a>
+            </li>
+        </ul>
+
+    </div>
+</div>

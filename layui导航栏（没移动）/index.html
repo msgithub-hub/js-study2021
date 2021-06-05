@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        @font-face {
+            font-family: 'glowblack';
+            src: url('./font/GlowSansSC-Normal-ExtraLight.otf');
+            src:url('./font/GlowSansSC-Normal-ExtraLight.otf') format('OpenType'),
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: glowblack;
+        }
+        html, body {
+            height: 100%;
+            width: 100%;
+            background: #ddd;
+        }
+        body {
+            position: relative;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .content_body {
+            width: 1100px;
+            margin: 0 auto;
+
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        /*媒体查询*/
+        @media (max-width: 1000px) {
+            .content_body {
+                width: 90%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div class="tou" id="tou"></div>
+<div class="content_body">
+    <div class="content1">我是1</div>
+    <div class="layui-elip" style="width: 30%;font-size: 30px">fgsgs jsdjkgsukd sjdvkj 哈啊尽快哈将很快交换机卡后即可军火出口交货v看拆开后vivihi和发发扶付好款v回调接口v和返还甲方的时间很多时间的时刻v看和v角度看v和时间VS的v还是viu是u业务i业务i</div>
+    <div class="">哈啊尽快哈将很快交换机卡后即可军火出口交货v看拆开后vivihi和发发扶付好款v回调接口v和返还甲方的时间很多时间的时刻v看和v角度看v和时间VS的v还是viu是u业务i业务i</div>
+    <div class="layui-text">哈啊尽快哈将很快交换机卡后即可军火出口交货v看拆开后vivihi和发发扶付好款v回调接口v和返还甲方的时间很多时间的时刻v看和v角度看v和时间VS的v还是viu是u业务i业务i</div>
+    <div class="layui-word-aux">哈啊尽快哈将很快交换机卡后即可军火出口交货v看拆开后vivihi和发发扶付好款v回调接口v和返还甲方的时间很多时间的时刻v看和v角度看v和时间VS的v还是viu是u业务i业务i</div>
+</div>
+
+<script src="./layui/layui.js"></script>
+<script src="loadHF.js"></script>
+<script>
+    let loadIndex;
+    layui.use(['element', 'layer', 'jquery'], (element,layer) => {
+        // let element = layui.element;
+        let $ = layui.jquery;
+        // let layer = layui.layer;
+        element.render();
+        $(function () {
+            // layer.ready(function() {
+            //     loadIndex = layer.load(1,{
+            //         time: 2 * 1000,
+            //         shade: [0.9,'#ddd']
+            //     });
+            // });
+
+            // layer.close(loadIndex);
+
+
+        })
+
+    })
+</script>
+</body>
+</html>

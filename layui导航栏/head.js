@@ -7,6 +7,7 @@ layui.use('jquery', () => {
         // 媒体查询
         $('.head').on('click', 'h2', function () {
             $('.layui-nav-tree1').show(500);
+            // $('.navUl').show(500);
         });
         $('.head').on('click', '.close', function () {
             $('.layui-nav-tree1').hide(500);
