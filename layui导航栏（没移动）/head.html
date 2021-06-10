@@ -1,10 +1,7 @@
 <style>
     .head {
         width: 100%;
-        /*background: #FD482C;*/
-        /*position: fixed;*/
-        /*top:0;*/
-        /*z-index: 100;*/
+        background: #393D49;
     }
 
     .head h2 {
@@ -20,7 +17,7 @@
     .navUl {
         width: 1200px;
         margin: 0 auto;
-        /*background: #FD482C;*/
+        background: #393D49;
     }
 
     .layui-nav-item2 {
@@ -84,20 +81,20 @@
             display: block;
             position: absolute;
             right: 10px;
-            top: -30px;
+            top: 10px;
             font-size: 30px;
             color: yellow
             ;font-weight: 600;
         }
     }
 </style>
-<div class="head layui-bg-cyan">
+<div class="head">
     <h2>点击展开</h2>
     <div class="ulFa">
-
+        <i class="layui-icon layui-icon-close close" style=""></i>
         <!--pc端-->
         <ul class="layui-nav  navUl" lay-shrink="all">
-            <i class="layui-icon layui-icon-close close" style=""></i>
+
             <li class="layui-nav-item layui-nav-item2">
                 <a href="index.html" class="a">产品</a>
             </li>
