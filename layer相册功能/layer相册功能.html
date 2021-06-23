@@ -55,12 +55,15 @@
     $(function () {
         $.getJSON('photo.json', function (json) {
             let authors = json.data;
-            console.log(authors);
+            // console.log(authors);
             for (let i = 0; i < authors.length; i++) {
-                $("#layer-photos-demo").prepend('<div class="divList">' +
-                    '<img class="list" src=' + authors[i].src + ' />' +
-                    '<b class="del">删除</b>' +
-                    '</div>')
+                var arr=`<div class="divList">
+                              <img class="list" src=' ${ authors[i].thumb } ' />
+                              <b class="del">删除</b>
+                         </div>
+
+                        `
+                $("#layer-photos-demo").prepend(arr)
             }
             // 相册功能查看图片
             layui.use(['layer'], function(){
@@ -75,7 +78,7 @@
             let index=0;
             $('.content_body').on('click', '.del', function () {
                 $(this).parent(".divList").eq(index).remove();
-                console.log($(".divList").length)
+                // console.log($(".divList").length)
             })
         });
 

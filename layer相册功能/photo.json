@@ -6,25 +6,25 @@
   "data": [
     {
       "alt": "图片名",
-      "pid": 666,
+      "pid": 1,
       "src": "96ecb719ebc4b745141678e6c2fc1e17888215fd.jpg",
       "thumb": "96ecb719ebc4b745141678e6c2fc1e17888215fd.jpg"
     },
     {
       "alt": "图片名",
-      "pid": 666,
+      "pid":2,
       "src": "242dd42a2834349bce4222f9c7ea15ce36d3be02.jpg",
       "thumb": "242dd42a2834349bce4222f9c7ea15ce36d3be02.jpg"
     },
     {
       "alt": "图片名",
-      "pid": 666,
+      "pid": 3,
       "src": "photo/1551076407870.jpg",
       "thumb": "photo/1551076407870.jpg"
     },
     {
       "alt": "图片名",
-      "pid": 666,
+      "pid":4,
       "src": "photo/a.jpg",
       "thumb": "photo/a.jpg"
     }

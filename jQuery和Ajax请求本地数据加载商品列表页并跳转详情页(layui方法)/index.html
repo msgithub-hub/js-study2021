@@ -59,8 +59,6 @@
                                     endIndex = startIndex + limit,
                                     list = dataList.slice(startIndex, endIndex);
                                 list.forEach((val, i) => {
-                                    // data-id="${val.id }"
-                                // <a href='listData.html?id="${val.id }"'>
                                     lis.push(`<li class="list_page" data-id="${val.id }">
 
                                                   <img lay-src="${val.imgUrl}" class="content_img">
@@ -68,10 +66,10 @@
                                                        <p class="voteTitle">票数:</p>
                                                        <p class="voteNum">0</p>
                                                   </div>
-                                                   <!--<img src="image/noCheck.png" class="noCheck">-->
+
                                                   <p style="width:100%;text-align:center">${val.title}</p>
                                                   <p class="nameList">${(page - 1) * limit + i + 1}</p>
-                                                <!--</a>-->
+
                                                </li>
                                              `)
                                 });
