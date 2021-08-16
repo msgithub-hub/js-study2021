@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    <h1 style="display: none">你猜我行不行s</h1>
+    <textarea type="text" id="password" value="请输入"></textarea>
+    <p id="result"></p>
+
+</div>
+<script src="jquery.min.js"></script>
+<script>
+$(function () {
+    $('#password').bind('input propertychange', function() {
+        if($(this).val().length<1){
+            $("h1").hide()
+        }else{
+            $("h1").show()
+        }
+        // $('#result').html($(this).val());
+    });
+
+})
+</script>
+</body>
+</html>

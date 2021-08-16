@@ -52,6 +52,7 @@
 <!--});-->
 <!--</script>-->
 <script>
+
     $(function () {
         $.getJSON('photo.json', function (json) {
             let authors = json.data;
@@ -75,10 +76,10 @@
 
 
             // 删除所选的图片
-            let index=0;
+            // let index=0;
             $('.content_body').on('click', '.del', function () {
-                $(this).parent(".divList").eq(index).remove();
-                // console.log($(".divList").length)
+                $(this).parent(".divList").remove();
+                // console.log(index)
             })
         });
 

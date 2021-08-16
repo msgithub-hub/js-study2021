@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="content_body">
-    <input class="input" value=""/>
+    <input class="input" value="" style="width:4rem;height:20px;overflow:visible;word-break:break-all"/>
     <button>取消</button>
 </div>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,8 +17,11 @@
         // $('button').click(function () {
         //     $(".input").removeAttr("disabled");
         // })
-        $('input').val("梅顺")
-        $(".input").attr("disabled","disabled");
+        $('input').val("梅顺何时交房时间简单说就是的和技术v看v和技术v开始")
+        $(".input").attr("disabled",true);//输入框不可输入
+        $('button').click(function () {
+            $(".input").attr("disabled",false);//输入框可输入
+        })
     })
 </script>
 </body>
