@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>微信添加菜单</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/common.css">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+</head>
+<body>
+<div class="content_body">
+    <!--左边（仿微信聊天界面）-->
+    <div class="leftContent">
+        <div class="leftHead">公众号</div>
+        <div class="leftFoot">
+            <div class="jianpanIcon">
+                <i class="layui-icon layui-icon-layouts"></i>
+            </div>
+            <!--添加一级菜单-->
+            <div class="addNubAll">
+                <div class="addNubOne">十</div>
+            </div>
+        </div>
+    </div>
+
+    <!--右边各项功能界面-->
+    <div class="rightContent">
+        <div class="rightHead">
+            <div class="yijiName">一级菜单名字</div>
+            <div class="delCD">删除菜单</div>
+        </div>
+        <div class="rightBody">
+            <!--菜单名字-->
+            <div class="layui-form-item formItem">
+                <label class="layui-form-label lableTitle">菜单名字:</label>
+                <div class="layui-input-block">
+                    <input type="text" name="title" required lay-verify="required" placeholder="请输入" autocomplete="off"
+                           class="layui-input">
+                </div>
+                <p class="yaoqiu">菜单名称不要超过5个字</p>
+            </div>
+
+            <!--菜单内容-->
+            <div class="CDcontent">
+                <div class="CDtitle">菜单内容:</div>
+                <div class="layui-tab layui-tab-brief" lay-filter="demo">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">关键字</li>
+                        <li>跳转网页</li>
+                        <li>小程序</li>
+                    </ul>
+
+                    <div class="layui-tab-content">
+                        <!--关键字-->
+                        <div class="layui-tab-item layui-show">
+                            <div class="layui-form-item keyWordInput ">
+                                <label class="layui-form-label lableKey">关键字:</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--跳转网页-->
+                        <div class="layui-tab-item">
+                            <div class="layui-form-item urlInput ">
+                                <label class="layui-form-label lableKey">页面地址</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入跳转地址"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--小程序-->
+                        <div class="layui-tab-item">
+                            <div class="layui-form-item urlInput ">
+                                <label class="layui-form-label lableKey">appId</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item urlInput ">
+                                <label class="layui-form-label lableKey">备用网址</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+
+                            <div class="layui-form-item urlInput ">
+                                <label class="layui-form-label lableKey">小程序路径</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入"
+                                           autocomplete="off" class="layui-input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--保存提交-->
+        <div class="rightFoot">
+            <div class="layui-btn layui-btn-normal">保存</div>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="./js/rem.js"></script>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['element', 'layer', 'jquery'], () => {
+        let element = layui.element;
+        let $ = layui.jquery;
+        let layer = layui.layer;
+        element.on('tab(demo)', function (data) {
+            console.log(data.index);
+            if (data.index == 0) {
+                layer.msg('你点击了标题1', {
+                    time: 1500
+                })
+            } else if (data.index == 1) {
+                layer.msg('你点击了标题2', {
+                    time: 1500
+                })
+            } else if (data.index == 2) {
+                layer.msg('你点击了标题3', {
+                    time: 1500
+                })
+            }
+        });
+        $(function () {
+            // 添加一级菜单
+            $('.addNubOne').click(function () {
+                $(this).clone().prependTo(".addNubAll").addClass('addNubOne1');
+            })
+        })
+    })
+</script>
+</body>
+</html>

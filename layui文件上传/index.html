@@ -38,14 +38,15 @@
         var uploadInst = upload.render({
             elem: '#test1'                //绑定元素
             , url: 'office.json'      //上传接口
-            , size: 5000                   //传输大小5000k
-            , exts: 'jpg|png|gif|docx'        //可传输文件的后缀
+            // , size: 5000                   //传输大小5000k
+            // , exts: 'jpg|png|gif|docx'        //可传输文件的后缀
+            , exts: 'xls|xlsx|xlsm|xlt|xltx|xltm'
             , accept: 'file'              //video audio images
 
             , data: { Parm1: "hello", Parm2: "world" }    //额外传输的参数
             , headers:{token:'sasasasa'}                   //额外添加的请求头
-            , auto: false                                 //自动上传,默认是打开的
-            , bindAction: '#btnUpload'                    //auto为false时，点击触发上传
+            // , auto: false                                 //自动上传,默认是打开的
+            // , bindAction: '#btnUpload'                    //auto为false时，点击触发上传
             , multiple: true                             //多文件上传
             , number: 5  ,                             //multiple:true时有效
             before: function(obj){

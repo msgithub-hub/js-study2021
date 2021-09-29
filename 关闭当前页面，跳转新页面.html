@@ -7,16 +7,15 @@
 </head>
 <body>
 <div class="content_body">
-    
+    <button>跳转</button>
 </div>
+<script src="jquery.min.js"></script>
 <script>
-    let str={
-        "name":"zhangsan",
-        "age":20,
-    };
-    let newStr=JSON.stringify(str);//转换成字符串形式
-    console.log(`newStr`)
-
+    $(function () {
+        $('button').click(function () {
+            location.replace('https://www.baidu.com')
+        })
+    })
 </script>
 </body>
 </html>

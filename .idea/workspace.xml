@@ -2,14 +2,130 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="078ee347-d4cc-407a-afc4-f10ee39a28b5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/baoming.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/获取input框实时数据.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui-switch开关.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui导入excel文件.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/layui表格溢出处理.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/swiper轮播图.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/关闭当前页面，跳转新页面.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/js/rem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/font/iconfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/transfer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信添加菜单/layui/layui.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/listData.html" beforeDir="false" afterPath="$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/listData.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jQuery设置表单不能输入的方法.html" beforeDir="false" afterPath="$PROJECT_DIR$/jQuery设置表单不能输入的方法.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layUipage.html" beforeDir="false" afterPath="$PROJECT_DIR$/layUipage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layer相册功能/layer相册功能.html" beforeDir="false" afterPath="$PROJECT_DIR$/layer相册功能/layer相册功能.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/layui.util.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui.util.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/json1（转换字符串）.html" beforeDir="false" afterPath="$PROJECT_DIR$/json1（转换字符串）.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui-table/layui-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui-table/layui-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layuiTab切换.html" beforeDir="false" afterPath="$PROJECT_DIR$/layuiTab切换.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui文件上传/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui文件上传/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/layui选择框.html" beforeDir="false" afterPath="$PROJECT_DIR$/layui选择框.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,13 +139,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="获取input框实时数据.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/获取input框实时数据.html">
+      <file leaf-file-name="jquery中的循环遍历方法.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/jquery中的循环遍历方法.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2418">
+              <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layui选择框.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layui选择框.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1456">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="关闭当前页面，跳转新页面.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/关闭当前页面，跳转新页面.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="312">
-              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="33" />
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layUipage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/layUipage.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="6" column="72" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="72" />
               <folding>
-                <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4110#4128#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="swiper轮播图.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swiper轮播图.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="22" column="9" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
+              <folding>
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -41,6 +199,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -62,17 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/layui文件上传/office.json" />
-        <option value="$USER_HOME$/Desktop/金茂/movement.html" />
-        <option value="$PROJECT_DIR$/layui字体.html" />
-        <option value="$PROJECT_DIR$/layui导航栏/index3.html" />
-        <option value="$PROJECT_DIR$/layui导航栏/index2.html" />
-        <option value="$PROJECT_DIR$/layui导航栏/layui/css/layui.css" />
-        <option value="$PROJECT_DIR$/layui导航栏/index.html" />
-        <option value="$PROJECT_DIR$/layui-table/layui/test.html" />
-        <option value="$PROJECT_DIR$/layui-table/table.json" />
-        <option value="$PROJECT_DIR$/layui-table/layui-table.html" />
-        <option value="$PROJECT_DIR$/layuiTab切换.html" />
         <option value="$PROJECT_DIR$/百度搜索接口.html" />
         <option value="$PROJECT_DIR$/固定导航栏.html" />
         <option value="$PROJECT_DIR$/超出3行显示省略号.html" />
@@ -98,13 +246,11 @@
         <option value="$PROJECT_DIR$/layui布局.html" />
         <option value="$PROJECT_DIR$/a标签的使用.html" />
         <option value="$PROJECT_DIR$/layUI日历.html" />
-        <option value="$PROJECT_DIR$/layui选择框.html" />
         <option value="$PROJECT_DIR$/js调取微信支付.html" />
         <option value="$PROJECT_DIR$/js获取省份位置.html" />
         <option value="$PROJECT_DIR$/js姓名加密.html" />
         <option value="$PROJECT_DIR$/jQuery设置表单不能输入的方法.html" />
         <option value="$PROJECT_DIR$/layui.util.html" />
-        <option value="$PROJECT_DIR$/layui文件上传/index.html" />
         <option value="$PROJECT_DIR$/js微信朋友圈评论功能/demo.html" />
         <option value="$PROJECT_DIR$/layer相册功能/layer相册功能.html" />
         <option value="$PROJECT_DIR$/layUipage.html" />
@@ -113,6 +259,19 @@
         <option value="$PROJECT_DIR$/flex布局.html" />
         <option value="$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/listData.html" />
         <option value="$PROJECT_DIR$/获取input框实时数据.html" />
+        <option value="$PROJECT_DIR$/layuiTab切换.html" />
+        <option value="$PROJECT_DIR$/json1（转换字符串）.html" />
+        <option value="$PROJECT_DIR$/layui导入excel文件.html" />
+        <option value="$PROJECT_DIR$/layui文件上传/index.html" />
+        <option value="$PROJECT_DIR$/微信添加菜单/css/common.css" />
+        <option value="$PROJECT_DIR$/微信添加菜单/index.html" />
+        <option value="$PROJECT_DIR$/微信添加菜单/css/index.css" />
+        <option value="$PROJECT_DIR$/layui-switch开关.html" />
+        <option value="$PROJECT_DIR$/layui-table/layui-table.html" />
+        <option value="$PROJECT_DIR$/layui表格溢出处理.html" />
+        <option value="$PROJECT_DIR$/layui选择框.html" />
+        <option value="$PROJECT_DIR$/关闭当前页面，跳转新页面.html" />
+        <option value="$PROJECT_DIR$/swiper轮播图.html" />
       </list>
     </option>
   </component>
@@ -122,7 +281,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1281" />
@@ -142,11 +301,6 @@
             <path>
               <item name="js-study2021" type="b2602c69:ProjectViewProjectNode" />
               <item name="js-study2021" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="js-study2021" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js-study2021" type="462c0819:PsiDirectoryNode" />
-              <item name="jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,6 +322,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -176,11 +331,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\dev2\js-study2021\微信添加菜单\js" />
+      <recent name="D:\dev2\js-study2021\微信添加菜单\css" />
+      <recent name="D:\dev2\js-study2021\微信添加菜单" />
       <recent name="D:\dev2\js-study2021\layui导航栏（没移动）\font" />
       <recent name="D:\dev2\js-study2021\中英文切换" />
-      <recent name="D:\dev2\js-study2021\layui-table" />
-      <recent name="D:\dev2\js-study2021\layui文件上传" />
-      <recent name="D:\dev2\js-study2021\layui导航栏" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -248,17 +403,29 @@
       <workItem from="1628818882041" duration="594000" />
       <workItem from="1628840428629" duration="1035000" />
       <workItem from="1629072125977" duration="2913000" />
+      <workItem from="1629264835809" duration="11014000" />
+      <workItem from="1629676976223" duration="16683000" />
+      <workItem from="1630282344382" duration="1190000" />
+      <workItem from="1630456725099" duration="2464000" />
+      <workItem from="1630755279425" duration="8000" />
+      <workItem from="1630889934426" duration="13643000" />
+      <workItem from="1631492197916" duration="7244000" />
+      <workItem from="1631666461920" duration="3912000" />
+      <workItem from="1632270879694" duration="2369000" />
+      <workItem from="1632554001434" duration="594000" />
+      <workItem from="1632701869875" duration="1702000" />
+      <workItem from="1632820270142" duration="4043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="255592000" />
+    <option name="totallyTimeSpent" value="320458000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15170771" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18824464" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -284,120 +451,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/前端验证码功能.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1638" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/固定导航栏.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="63" column="372" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="372" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/百度搜索接口.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏/head.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="185" column="16" selection-start-line="185" selection-start-column="16" selection-end-line="185" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏（没移动）/layui/css/layui.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="1" column="49381" selection-start-line="1" selection-start-column="49375" selection-end-line="1" selection-end-column="49381" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏（没移动）/index3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏（没移动）/index2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/中英文切换/microsoft.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5486">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/中英文切换/language.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="936">
-          <caret line="35" column="1" lean-forward="true" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/中英文切换/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/监听页面是否长时间未操作.html" />
-    <entry file="file://$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pc端点击加载数据.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1508">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/日期对象.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-258" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js实现字体打印效果.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="30" column="40" lean-forward="true" selection-start-line="30" selection-start-column="40" selection-end-line="30" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/超出3行显示省略号.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="26">
-          <caret line="54" column="23" selection-start-line="54" selection-start-column="23" selection-end-line="54" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/鼠标滚动，触发相应css3动态效果.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="173">
@@ -412,13 +465,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="69" column="18" selection-start-line="69" selection-start-column="18" selection-end-line="69" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/layui/css/layui.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18226">
@@ -430,13 +476,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="520">
           <caret line="56" column="27" selection-start-line="54" selection-start-column="8" selection-end-line="56" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui选择框.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1274">
-          <caret line="49" column="19" selection-start-line="49" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -461,24 +500,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏（没移动）/head.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/layui导航栏（没移动）/loadHF.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="7" column="11" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="7" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui导航栏（没移动）/head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="5" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -496,31 +521,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery设置表单不能输入的方法.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui.util.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="30" column="11" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="30" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js获取省份位置.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
           <caret line="33" column="9" selection-start-line="27" selection-start-column="8" selection-end-line="33" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layui文件上传/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1276">
-          <caret line="59" column="22" lean-forward="true" selection-start-line="59" selection-start-column="22" selection-end-line="59" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -550,11 +554,6 @@
         <state relative-caret-position="-312" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/indexSon.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-390" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jq-tab切换.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2052" />
@@ -567,65 +566,241 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js异步加载.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layuiTab切换.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/layUipage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="76" column="10" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flex布局.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/baoming.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="26" column="23" selection-start-line="12" selection-start-column="3" selection-end-line="26" selection-end-column="23" />
-          <folding>
-            <element signature="e#313#624#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/listData.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="65" column="55" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="55" />
-          <folding>
-            <element signature="e#947#1334#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="104" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/获取input框实时数据.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="33" />
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/laydate记事本.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1092" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json1（转换字符串）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui-table/table.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="13" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/indexFather.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="19" column="53" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导入excel文件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏（没移动）/head.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏（没移动）/head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="104">
+          <caret line="4" column="5" selection-start-line="1" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1014">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui文件上传/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="31" column="40" lean-forward="true" selection-start-line="31" selection-end-line="31" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/微信添加菜单/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1092">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="58" column="66" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="58" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui导航栏/index2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="54" column="53" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/微信添加菜单/layui/css/layui.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="1" column="2119" selection-start-line="1" selection-start-column="2119" selection-end-line="1" selection-end-column="2119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layuiTab切换.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="23" column="60" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/微信添加菜单/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/listData.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="65" column="55" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flex布局.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="26" column="32" lean-forward="true" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/微信添加菜单/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="63" column="34" selection-start-line="57" selection-start-column="28" selection-end-line="63" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery设置表单不能输入的方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery 设置属性attr.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui.util.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jq滚到底部自动加载数据.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3588" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQuery和Ajax请求本地数据加载商品列表页并跳转详情页(layui方法)/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="95" column="43" lean-forward="true" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui-switch开关.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="28" column="50" lean-forward="true" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js异步加载.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-312" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui-table/layui-table.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="101" column="36" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui表格溢出处理.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="808">
+          <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery中的循环遍历方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2418">
+          <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui选择框.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1456">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
           <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/关闭当前页面，跳转新页面.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layUipage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="6" column="72" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="72" />
+          <folding>
+            <element signature="e#4110#4128#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swiper轮播图.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="22" column="9" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="22" selection-end-column="9" />
+          <folding>
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

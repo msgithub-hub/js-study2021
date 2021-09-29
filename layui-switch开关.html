@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+</head>
+<body>
+<div class="content_body">
+    <form class="layui-form" action="" lay-filter="example">
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <input lay-filter="switchTest" type="checkbox" value="2" lay-skin="switch" lay-text="禁言|不禁言" class="switch" id="switch">
+            </div>
+        </div>
+    </form>
+    <button>点击</button>
+
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['form','jquery'], function(){
+        var form=layui.form;
+        var $=layui.jquery;
+        $(function () {
+            $("button").click(function () {
+                console.log(111);
+                $('.switch').prop('checked',false)
+
+            });
+
+
+
+
+            form.on('switch(switchTest)', function (data) {
+                console.log(data.othis)
+                if(this.checked){
+                    layer.msg('开关checked：'+ (this.checked ? 'true' : 'false'), {
+
+                    });
+
+                }else{
+                    layer.msg('开关： 关掉了', {
+                        offset: '6px'
+
+                    });
+                }
+
+
+                // let checkdeType = data.elem.checked;
+                // console.log(data.elem.checked); //开关是否开启，true或者false
+                // if(data.elem.checked===true){
+                //     data.othis.checked=true;
+                // }else{
+                //     this.checked=false;
+                // }
+
+
+            });
+        })
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+.leftContent{
+    width: 320px;
+    height: 500px;
+    background: #F2F2F2;
+    position: relative;
+    margin-left: 17%;
+    margin-top: 20px;
+    border: 1px solid #dddddd;
+}
+.leftHead{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 0.6rem;
+    color: white;
+    line-height: 40px;
+    background: black;
+}
+.leftFoot{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background: white;
+    position: absolute;
+    bottom: 0;
+    border-top: 1px solid #dddddd;
+}
+.jianpanIcon{
+    width: 15%;
+    height: 100%;
+    border-right: 1px solid #dddddd;
+    /*background: green;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.jianpanIcon i{
+    /*display: block;*/
+    font-size: 1rem;
+    margin-left: 24%;
+    color: #dddddd;
+}
+.addNubAll{
+    width: 85%;
+    height: 100%;
+    background: #FF5722;
+    display: flex;
+}
+.addNubOne{
+    width: 100%;
+    height: 100%;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 50px;
+    color: #1E9FFF;
+    cursor: pointer;
+}
+
+.rightContent{
+    width: 500px;
+    height: 500px;
+    background: #F2F2F2;
+    position: relative;
+    margin-left: 3%;
+    margin-top: 20px;
+    /*padding: 0 15px;*/
+    border: 1px solid #dddddd;
+}
+.rightHead{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+}
+.rightHead div{
+    width: 50%;
+    height: 100%;
+    font-size: 0.6rem;
+    line-height: 40px;
+}
+.yijiName{
+    padding-left: 15px;
+    text-align: left;
+}
+.delCD{
+    padding-right: 15px;
+    text-align: right;
+    color: #1E9FFF;
+}
+
+.rightBody{
+    width: 100%;
+    padding: 15px;
+    /*background: pink;*/
+}
+.formItem{
+    display: flex;
+}
+.lableTitle{
+    font-size: 0.6rem!important;
+    width: 105px!important;
+}
+.layui-input-block {
+    margin-left:0px!important;
+}
+.yaoqiu{
+    padding-left: 30px;
+    /*color: #dddddd;*/
+    line-height: 36px;
+}
+.CDcontent{
+    width: 100%;
+    display: flex;
+    /*background: yellow;*/
+}
+.CDtitle{
+    font-size: 0.6rem!important;
+    width: 105px!important;
+    line-height: 61px;
+    padding-left: 20px;
+}
+.layui-tab-content{
+    padding-top: 20px;
+}
+.keyWordInput,.urlInput{
+   display: flex;
+}
+.lableKey{
+    width: 100px;
+    /*background: red;*/
+    text-align: center!important;
+    font-size: 0.6rem;
+    margin-left: -10px;
+    padding-left: 0px;
+}
+.layui-input{
+    font-size: 0.6rem!important;
+}
+.layui-tab-title{
+    border: none!important;
+}
+.rightFoot{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /*background: white;*/
+    position: absolute;
+    bottom: 0;
+    /*border-top: 1px solid #dddddd;*/
+}
+
+.addNubOne1{
+    width: 28.33%;
+    height: 100%;
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-align: center;
+    line-height: 50px;
+    color: #1E9FFF;
+    cursor: pointer;
+    border-right: 1px solid #dddddd;
+}

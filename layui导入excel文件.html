@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css" media="all">
+</head>
+<body>
+<div class="content_body">
+    <button id="importData" class="layui-btn" onclick="importData()">导入</button>
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use([ "element", "laypage", "layer", "upload"], function() {
+        var element = layui.element;
+        var laypage = layui.laypage;
+        var layer = layui.layer;
+        var upload = layui.upload;//主要是这个
+        upload.render({
+            elem: "#importData",//导入id
+            url: "/xx/importData",
+            // size: '9072',
+            accept: "file",
+            exts: 'xls|xlsx|xlsm|xlt|xltx|xltm',
+            done: function (result) {
+                // if (result.status == 0) {
+                //     refreshTable()
+                // }
+                // if (result.message != null) {
+                //     refreshTable();
+                //     layer.msg(result.message)
+                // }
+            }
+        });
+        // refreshTable()
+    });
+</script>
+</body>
+</html>

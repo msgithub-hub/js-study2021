@@ -5,6 +5,26 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
     <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        .adddemo{
+            width: 50vw;
+            background: greenyellow;
+            padding-bottom: 20px;
+            margin-left: 30px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .lable{
+            padding: 3px;
+            text-align: center;
+            background: #F6523A;
+            color: white;
+            font-size: 0.5rem;
+            margin-right: 2.5%;
+            margin-top: 2%;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
 <div class="content_body">
@@ -13,9 +33,15 @@
             <label class="layui-form-label">下拉选择框</label>
             <div class="layui-input-block" style="width: 15vw">
                 <select name="interest" lay-filter="aihao1">
-                    <!--<option selected>请选择语言</option>-->
-                    <option value="0" selected>中文</option>
-                    <option value="1">英文</option>
+                    <option value=""></option>
+                    <option value="英文">英文</option>
+                    <option value="嘎嘎">嘎嘎</option>
+                    <option value="会员">会员</option>
+                    <option value="张三">张三</option>
+                    <option value="李四">李四</option>
+                    <option value="王二">王二</option>
+                    <option value="码字">码字</option>
+                    <option value="中文">中文</option>
                 </select>
             </div>
         </div>
@@ -23,11 +49,40 @@
         <div class="layui-form-item">
             <label class="layui-form-label">单选框</label>
             <div class="layui-input-block" >
-                <input type="radio" name="sex" value="0" title="男" lay-filter="aihao2">
-                <input type="radio" name="sex" value="1" title="女" checked lay-filter="aihao2">
+                <input type="radio" name="sex" value="0" title="嘎嘎" lay-filter="aihao2">
+                <input type="radio" name="sex" value="1" title="会员" checked lay-filter="aihao2">
+            </div>
+
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label">复选框</label>
+            <div class="layui-input-block">
+                <input type="checkbox" name="like[write]" title="写作" lay-filter="aihao2">
+                <input type="checkbox" name="like[read]" title="阅读" lay-filter="aihao2">
+                <input type="checkbox" name="like[dai]" title="发呆" lay-filter="aihao2">
             </div>
         </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label layui-required">意见或想法：</label>
+            <div class="layui-input-block">
+                <textarea placeholder="你的意见 我们必认真对待" required oninput="wordLeg(this);" maxlength="10" onpropertychange="if(value.length>100) value=value.substr(0,10)" name="desc" class="layui-textarea"></textarea>
+
+                <div class="word"><span class="text_count">0</span>&nbsp;/&nbsp;<span class="num_count" id="numCount">10</span></div>
+
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit lay-filter="*">立即提交</button>
+            </div>
+        </div>
+
     </form>
+    <div class="adddemo"></div>
+
 </div>
 <script src="./layui/layui.js"></script>
 <script>
@@ -36,14 +91,18 @@
         let layer = layui.layer;
         let $ = layui.jquery;
         form.on('select(aihao1)', (data)=> {
-            if(data.value==0){
-                layer.msg('你选择了中文')
-                console.log(data.value)
-
-            }else if(data.value==1){
-                layer.msg('你选择了英文')
-                console.log(data.value)
-            }
+            console.log(data.value)
+            var list = [];
+            list.push(`<p class="lable">${data.value}</p>`);
+            $(".adddemo").append(list);
+            // if(data.value==0){
+            //     layer.msg('你选择了中文')
+            //     console.log(data.value)
+            //
+            // }else if(data.value==1){
+            //     layer.msg('你选择了英文')
+            //     console.log(data.value)
+            // }
         });
         form.on('radio(aihao2)', (data)=>{
             // console.log(data.elem); //得到checkbox原始DOM对象
@@ -51,6 +110,37 @@
             console.log(data.value); //复选框value值，也可以通过data.elem.value得到
             // console.log(data.othis); //得到美化后的DOM对象
         });
+        $(function () {
+            window.wordLeg = function (obj) {
+                var currleg = $(obj).val().length;
+                var length = $(obj).attr('maxlength');
+
+                if (currleg > length) {
+
+                    layer.msg('字数请在' + length + '字以内');
+
+                } else {
+
+                    $('.text_count').text(currleg);
+
+                }
+
+            }
+
+            // form.on('submit(*)', function(data){
+            //     console.log(data);
+            //     //将页面全部复选框选中的值拼接到一个数组中
+            //     var arr_box = [];
+            //     $('input[type=checkbox]:checked').each(function() {
+            //         arr_box.push($(this).val());
+            //     });
+            //     //数组
+            //     console.log(arr_box);
+            //     return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+            // });
+
+
+        })
     })
 </script>
 </body>
