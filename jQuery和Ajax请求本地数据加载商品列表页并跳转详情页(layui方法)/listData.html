@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="content_body">
-    <!--<div class="butn" style="">我要报名</div>-->
+    <div class="butn" style=""></div>
 </div>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
 <script src="layui/layui.js"></script>
@@ -48,21 +48,29 @@
                 },
                 success: function (res) {
                     var dataList = res.books;
-                    console.log(dataList);
+                    // console.log(dataList);
                     $.each(dataList, function (idx, val) {
                         if (idAll == val.id) {
-                            var el = `<div class="text_body juzhong">
-                                  <p class="textTitle">${val.title}</p>
-                                  <p class="text_bodyText"> ${val.publish}</p>
-                                  <div class="photo_rongqi">
-                                       <img src="${val.imgUrl}" class="photo">
-                                  </div>
-                                  <p>${val.desc}</p>
-                                  <div class="butn" data-id="${val.id}">我要报名</div>
-                            </div>`;
-                            $('.content_body').append(el)
+                            var item = dataList.find(function (obj) {
+                                return obj.id==idAll;
+                            });
+                            console.log(item);
+                            $('.butn').text(`${item.title}`)
+
+
+                            // var el = `<div class="text_body juzhong">
+                            //       <p class="textTitle">${val.title}</p>
+                            //       <p class="text_bodyText"> ${val.publish}</p>
+                            //       <div class="photo_rongqi">
+                            //            <img src="${val.imgUrl}" class="photo">
+                            //       </div>
+                            //       <p>${val.desc}</p>
+                            //       <div class="butn" data-id="${val.id}">我要报名</div>
+                            // </div>`;
+                            // $('.content_body').append(el)
                         }
                     });
+
                     // $('.butn').attr('data-id',idAll)
 
                     // 图片预览

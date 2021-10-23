@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+    <button>点我</button>
+    <p class="title">你好</p>
+    <p class="app">江苏</p>
+    <p class="imp">单顺</p>
+</div>
+<script src="../jquery.min.js"></script>
+<script>
+    $(function () {
+        $('button').click(function () {
+            //传递参数并打开页面 传递得参数："t="+title+"&p="+app+"&e="+e+"&imp="+mIm
+            var title=$('.title').text();
+            var app=$('.app').text();
+            var imp=$('.imp').text();
+            window.open("./b.html?"+encodeURI("t="+title+"&p="+app+"&imp="+imp),"_blank");
+
+
+        })
+    })
+</script>
+</body>
+</html>

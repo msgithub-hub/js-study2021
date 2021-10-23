@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>b页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+</head>
+<body>
+<div class="content_body">
+
+</div>
+<script src="../jquery.min.js"></script>
+<script>
+    $(function () {
+        function getRequest() {
+            var url = decodeURI(location.search); //获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for (var i = 0; i < strs.length; i++) {
+                    theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                }
+            }
+            return theRequest;
+        }
+
+        function  getParams(key){
+            var parasm = getRequest();
+            var p =  parasm[key];
+            return p;
+        }
+        var title = getParams("t");//获取参数
+        var pkg = getParams("p");
+        var imp = getParams("imp");
+
+        console.log(title);
+        console.log(pkg);
+        console.log(imp);
+
+    })
+</script>
+</body>
+</html>
