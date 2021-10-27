@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        .textareaBtn{
+            width: 96%;
+            margin-left: 2%;
+            height: 8rem;
+            /*background: yellow;*/
+            display: flex;
+            align-items: flex-start;
+        }
+        .input{
+            display: block;
+            width: 75%;
+            height: 4.5rem!important;
+            line-height: 1.5rem;
+            font-size: 0.9rem;
+            padding: 3%;
+            border: none;
+            outline: none;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+            background: #F2F2F2;
+        }
+        .tijiao,.tijiao1,.tijiao2{
+            width: 20%;
+            display: block;
+            background-color: #F6523A;
+            color: white;
+            font-size: 1rem;
+            line-height: 2.5rem;
+            margin-left: 4%;
+            margin-top: 1rem;
+            /*margin-bottom: 3vw;*/
+            text-align: center;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <button type="button" class="layui-btn btn">按钮</button>
+</div>
+<script src="./layui/layui.js"></script>
+<script>
+    layui.use(['element', 'layer', 'jquery'], () => {
+        let element = layui.element;
+        let $ = layui.jquery;
+        let layer = layui.layer;
+
+        $(function () {
+            $('.btn').click(function () {
+                let mask=`<div class="textareaBtn">
+                              <textarea type="text" id="input" class="input" placeholder="请输入" contenteditable="true"></textarea>
+
+                             <!--提交一级评论的按钮-->
+                             <button type="button" class="layui-btn tijiao1">确定</button>
+                          </div>`;
+                layer.open({
+                    type:1,
+                    anim: 1,
+                    shade:0.1,
+                    title: "留言框",
+                    offset: 'b',
+                    area: ['100vw', '180px'],
+                    content: mask
+                });
+            })
+
+
+        })
+
+    })
+</script>
+</body>
+</html>
