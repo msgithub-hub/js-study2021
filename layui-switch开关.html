@@ -10,12 +10,28 @@
 <div class="content_body">
     <form class="layui-form" action="" lay-filter="example">
         <div class="layui-form-item">
-            <div class="layui-input-block">
-                <input lay-filter="switchTest" type="checkbox" value="2" lay-skin="switch" lay-text="禁言|不禁言" class="switch" id="switch">
+            <label for="L_username" class="layui-form-label">
+                用户名
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="L_username" name="username" lay-verify="required" autocomplete="off"
+                       class="layui-input username">
             </div>
         </div>
+        <div class="layui-form-item" style="display: flex;align-items: center">
+            <div class="layui-input-block">
+                <input lay-filter="switchTest" type="checkbox" value="0" lay-skin="switch" lay-text="同意|不同意" class="switch" id="switch1">
+            </div>
+            <p style="color: #1E9FFF;font-size: 0.8rem">《用户协议》</p>
+
+        </div>
+
+        <div class="layui-form-item">
+            <label class="layui-form-label"></label>
+            <input id="submit" class="layui-btn" type="submit" lay-submit lay-filter="add" value="发布">
+        </div>
     </form>
-    <button>点击</button>
+
 
 </div>
 <script src="./layui/layui.js"></script>
@@ -24,40 +40,54 @@
         var form=layui.form;
         var $=layui.jquery;
         $(function () {
-            $("button").click(function () {
-                console.log(111);
-                $('.switch').prop('checked',false)
-
-            });
-
-
-
-
-            form.on('switch(switchTest)', function (data) {
-                console.log(data.othis)
-                if(this.checked){
-                    layer.msg('开关checked：'+ (this.checked ? 'true' : 'false'), {
-
-                    });
-
-                }else{
-                    layer.msg('开关： 关掉了', {
-                        offset: '6px'
-
-                    });
+            //监听提交
+            form.on('submit(add)', function () {
+                if(!$(".switch").is(':checked')){
+                    layer.tips('你还没同意协议','.layui-unselect');
+                    return false
                 }
+                form.on('switch(switchTest)', function (data) {
+                    let checkdeType = data.elem.checked;//开关是否开启，true或者false
+                    if (checkdeType === false) {
+                        layer.tips('你还没同意协议','.layui-unselect');
+                       return false
+                    }
+                });
+                layer.msg('提交成功',function () {
+                    $(".layui-input-block").hide();
+                });
 
-
-                // let checkdeType = data.elem.checked;
-                // console.log(data.elem.checked); //开关是否开启，true或者false
-                // if(data.elem.checked===true){
-                //     data.othis.checked=true;
-                // }else{
-                //     this.checked=false;
-                // }
-
-
+                return false;
             });
+
+            // form.on('switch(switchTest)', function (data) {
+            //     console.log(data.othis)
+            //     if(this.checked){
+            //         layer.msg('开关checked：'+ (this.checked ? 'true' : 'false'), {
+            //
+            //         });
+            //
+            //     }else{
+            //         layer.msg('开关： 关掉了', {
+            //             offset: '6px'
+            //
+            //         });
+            //     }
+            //
+            //
+            //     // let checkdeType = data.elem.checked;
+            //     // console.log(data.elem.checked); //开关是否开启，true或者false
+            //     // if(data.elem.checked===true){
+            //     //     data.othis.checked=true;
+            //     // }else{
+            //     //     this.checked=false;
+            //     // }
+            //
+            //
+            // });
+
+
+
         })
 
     })

@@ -34,6 +34,7 @@
 <div class="map" id="map-container"></div>
 <script src="./jquery.min.js"></script>
 <script src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
+<!--<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=DXGBZ-EHOWG-GUSQ3-IK74G-S52QT-Y2FGG"></script>-->
 
 <!--腾讯地图-->
 <!--<script src="http://map.qq.com/api/js?key=DXGBZ-EHOWG-GUSQ3-IK74G-S52QT-Y2FGG"></script>-->
@@ -46,17 +47,23 @@
     $(function () {
         /**                 自动识别所在的省份                  **/
         let geolocation = new qq.maps.Geolocation("DXGBZ-EHOWG-GUSQ3-IK74G-S52QT-Y2FGG", "myapp");
-        // let positionNum = 0;
+        let positionNum = 0;
         let options = {timeout: 500};
+
         function showPosition(position) {
             let province = position.province; //省份
             let city = position.city; //城市
-            let lng=position.lng;
-            let lat=position.lat;
+            let district = position.district;
+            let lng = position.lng;
+            let lat = position.lat;
+            let addr = position.addr; //详细地址
             privence = position.province;
             city = position.city;
-            lng=position.lng;
-            lat=position.lat;
+            district = position.district;
+            lng = position.lng;
+            lat = position.lat;
+            addr = position.addr;
+
             console.log(position);
             let addressMy = `<option class='tr' selected>${privence}${city}</option>`;
             $("#myid").prepend(addressMy);
@@ -67,44 +74,44 @@
 
 
             // (lng, lat)
-            var citylocation,map,marker = null;
-            //给外层的a标签加上url，方便一会点击小地图的时候直接跳转。
-            function newMapGo(id,lat,lng){
-                var markUrl = 'https://apis.map.qq.com/tools/poimarker' +
-                    '?marker=coord:' + lat + ',' + lng +
-                    '&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp';
-                //给位置展示组件赋值
-                document.getElementById(id).href = markUrl;
-            }
-            //需要外层元素id和对应地址的经纬度
-            function newMap(id,lat,lng){
-                var center = new qq.maps.LatLng(lat, lng);
-                var map = new qq.maps.Map(document.getElementById(id), {
-                    center: center,
-                    zoom: 18
-                });
-                //调用城市服务信息
-                citylocation = new qq.maps.CityService({
-                    complete : function(results){
-                        map.setCenter(results.detail.latLng);
-                        if (marker != null) {
-                            // marker.setMap(null);
-                        }
-                        //设置marker标记
-                        marker = new qq.maps.Marker({
-                            map: map,
-                            position: results.detail.latLng
-                        });
-                    }
-                });
-                citylocation.searchCityByLatLng(center);
-                newMapGo('aToMap',lat,lng);
-            }
-            //给id,经纬度
-            newMap('map-container',lat,lng)
+            // var citylocation,map,marker = null;
+            // //给外层的a标签加上url，方便一会点击小地图的时候直接跳转。
+            // function newMapGo(id,lat,lng){
+            //     var markUrl = 'https://apis.map.qq.com/tools/poimarker' +
+            //         '?marker=coord:' + lat + ',' + lng +
+            //         '&key=OB4BZ-D4W3U-B7VVO-4PJWW-6TKDJ-WPB77&referer=myapp';
+            //     //给位置展示组件赋值
+            //     document.getElementById(id).href = markUrl;
+            // }
+            // //需要外层元素id和对应地址的经纬度
+            // function newMap(id,lat,lng){
+            //     var center = new qq.maps.LatLng(lat, lng);
+            //     var map = new qq.maps.Map(document.getElementById(id), {
+            //         center: center,
+            //         zoom: 18
+            //     });
+            //     //调用城市服务信息
+            //     citylocation = new qq.maps.CityService({
+            //         complete : function(results){
+            //             map.setCenter(results.detail.latLng);
+            //             if (marker != null) {
+            //                 // marker.setMap(null);
+            //             }
+            //             //设置marker标记
+            //             marker = new qq.maps.Marker({
+            //                 map: map,
+            //                 position: results.detail.latLng
+            //             });
+            //         }
+            //     });
+            //     citylocation.searchCityByLatLng(center);
+            //     newMapGo('aToMap',lat,lng);
+            // }
+            // //给id,经纬度
+            // newMap('map-container',lat,lng)
 
         }
-        geolocation.getLocation(showPosition, options);
+        geolocation.getLocation(showPosition,options);
 
 
     });

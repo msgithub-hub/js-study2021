@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 12px;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .box8{
+            height: 35px;
+            background: #000;
+            overflow: hidden;
+        }
+        .t_news{
+            height: 19px;
+            color: #fff;
+            padding-left: 10px;
+            margin: 8px 0;
+            overflow: hidden;
+            position: relative;
+        }
+        .news_li,.swap{
+            line-height: 19px;
+            font-weight: bold;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 72px;
+        }
+        .news_li a,.swap a{
+            color: #fff;
+        }
+        .swap{
+            top: 19px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box8">
+    <div class="t_news">
+        <ul class="news_li">
+            <li><a href="javascript:;">苹果8降价</a></li>
+            <li><a href="javascript:;">苹果7降价</a></li>
+            <li><a href="javascript:;">苹果6降价</a></li>
+            <li><a href="javascript:;">苹果5降价</a></li>
+            <li><a href="javascript:;">苹果4降价</a></li>
+            <li><a href="javascript:;">苹果X降价</a></li>
+        </ul>
+        <ul class="swap"></ul>
+    </div>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+    function Textrolling(){
+        t = parseInt(x.css('top'));
+        y.css('top','19px');
+        x.animate({
+            top:t-19 + 'px'
+        },'slow');//19为每个li的高度
+        if(Math.abs(t) == h-19){//19为每个li的高度
+            y.animate({
+                top:'0px'
+            },'slow');
+            z=x;
+            x=y;
+            y=z;
+        }
+        setTimeout(Textrolling,3000);//滚动间隔时间 现在是3秒
+    }
+    $(document).ready(function(){
+        $('.swap').html($('.news_li').html());
+        x = $('.news_li');
+        y = $('.swap');
+        h = $('.news_li li').length * 19;//19为每个li的高度
+        setTimeout(Textrolling,3000);//滚动间隔时间 现在是3秒
+    })
+</script>
+</body>
+</html>
