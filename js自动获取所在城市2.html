@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./layui/css/layui.css">
+    <style>
+        .content_body {
+            display: flex;
+        }
+
+        #daditu {
+            width: 100vw;
+            background: pink;
+            padding-bottom: 10px;
+        }
+
+        #map-container {
+            width: 100vw;
+            height: 400px;
+            margin: 20px auto;
+        }
+
+        vw
+    </style>
+</head>
+<body>
+<div class="content_body">
+    <i class="layui-icon layui-icon-location" style="color: red;"></i>
+    <select name="myid" id="myid">
+        <option class="ready">定位中</option>
+    </select>
+
+
+</div>
+<!--//地图-->
+<div class="map" id="map-container"></div>
+<script src="./jquery.min.js"></script>
+<script src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js"></script>
+<!--<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=DXGBZ-EHOWG-GUSQ3-IK74G-S52QT-Y2FGG"></script>-->
+
+<script src="./layui/layui.js"></script>
+<script>
+    $(function () {
+        /**                 自动识别所在的省份                  **/
+
+
+            let geolocation = new qq.maps.Geolocation("DXGBZ-EHOWG-GUSQ3-IK74G-S52QT-Y2FGG", "myapp");
+        let options = {timeout: 1000};
+
+        //定位数据获取成功响应
+        function onSuccess(position) {
+            console.log(position);
+            let province = position.province; //省份
+            let city = position.city; //城市
+            let addressMy = `<option class='tr' selected>${province}${city}</option>`;
+            $("#myid").prepend(addressMy);
+        }
+
+        //定位数据获取失败响应
+        function onError() {
+            console.log('无法获取您的地理位置');
+        }
+
+        geolocation.getLocation(onSuccess, onError, options)
+
+    });
+</script>
+</body>
+</html>
