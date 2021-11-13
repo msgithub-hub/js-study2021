@@ -39,8 +39,8 @@
             elem: '#test1'                //绑定元素
             , url: 'office.json'      //上传接口
             // , size: 5000                   //传输大小5000k
-            // , exts: 'jpg|png|gif|docx'        //可传输文件的后缀
-            , exts: 'xls|xlsx|xlsm|xlt|xltx|xltm'
+            , exts: 'jpg|png|gif|docx'        //可传输文件的后缀
+            // , exts: 'xls|xlsx|xlsm|xlt|xltx|xltm'
             , accept: 'file'              //video audio images
 
             , data: { Parm1: "hello", Parm2: "world" }    //额外传输的参数
@@ -61,9 +61,10 @@
                 // });
             }
             , done: function (res, index, upload) {                      //传输完成的回调
-                console.log(index);
-                console.log(upload);
-                // $('.prieve').append("src", res.data.src);
+                console.log(res);
+                // console.log(upload);
+                let img=`<img id="myPic" src="${res.data.src}" width="500" />`;
+                $('.prieve').append(img);
             }
             , error: function () {                         //传输失败的回调
                 //请求异常回调

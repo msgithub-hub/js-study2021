@@ -8,7 +8,7 @@
     <style>
         .adddemo{
             width: 50vw;
-            background: greenyellow;
+            /*background: greenyellow;*/
             padding-bottom: 20px;
             margin-left: 30px;
             display: flex;
@@ -47,32 +47,59 @@
         </div>
 
         <div class="layui-form-item">
-            <label class="layui-form-label">单选框</label>
-            <div class="layui-input-block" >
-                <input type="radio" name="sex" value="0" title="嘎嘎" lay-filter="aihao2">
-                <input type="radio" name="sex" value="1" title="会员" checked lay-filter="aihao2">
-            </div>
-
-        </div>
-
-        <div class="layui-form-item">
-            <label class="layui-form-label">复选框</label>
-            <div class="layui-input-block">
-                <input type="checkbox" name="like[write]" title="写作" lay-filter="aihao2">
-                <input type="checkbox" name="like[read]" title="阅读" lay-filter="aihao2">
-                <input type="checkbox" name="like[dai]" title="发呆" lay-filter="aihao2">
+            <div class="layui-input-block" style="width: 15vw">
+                <select name="interest" lay-filter="aihao2">
+                    <option value=""></option>
+                    <option value="1英文">1英文</option>
+                    <option value="1嘎嘎">1嘎嘎</option>
+                    <option value="1会员">1会员</option>
+                    <option value="1张三">1张三</option>
+                    <option value="1李四">1李四</option>
+                    <option value="1王二">1王二</option>
+                    <option value="1码字">1码字</option>
+                    <option value="1中文">1中文</option>
+                </select>
             </div>
         </div>
 
-        <div class="layui-form-item">
-            <label class="layui-form-label layui-required">意见或想法：</label>
-            <div class="layui-input-block">
-                <textarea placeholder="你的意见 我们必认真对待" required oninput="wordLeg(this);" maxlength="10" onpropertychange="if(value.length>100) value=value.substr(0,10)" name="desc" class="layui-textarea"></textarea>
+        <!--<div class="layui-form-item">-->
+            <!--<label class="layui-form-label">单选框</label>-->
+            <!--<div class="layui-input-block" >-->
+                <!--<input type="radio" name="sex" value="0" title="嘎嘎" lay-filter="aihao2">-->
+                <!--<input type="radio" name="sex" value="1" title="会员" checked lay-filter="aihao2">-->
+            <!--</div>-->
 
-                <div class="word"><span class="text_count">0</span>&nbsp;/&nbsp;<span class="num_count" id="numCount">10</span></div>
+        <!--</div>-->
 
-            </div>
-        </div>
+        <!--<div class="layui-form-item">-->
+            <!--<label class="layui-form-label">复选框</label>-->
+            <!--<div class="layui-input-block">-->
+                <!--<input type="checkbox" name="like[write]" title="写作" lay-filter="aihao2">-->
+                <!--<input type="checkbox" name="like[read]" title="阅读" lay-filter="aihao2">-->
+                <!--<input type="checkbox" name="like[dai]" title="发呆" lay-filter="aihao2">-->
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="layui-form-item">-->
+            <!--<label class="layui-form-label layui-required">意见或想法：</label>-->
+            <!--<div class="layui-input-block">-->
+                <!--<textarea placeholder="你的意见 我们必认真对待" required oninput="wordLeg(this);" maxlength="10" onpropertychange="if(value.length>100) value=value.substr(0,10)" name="desc" class="layui-textarea"></textarea>-->
+
+                <!--<div class="word"><span class="text_count">0</span>&nbsp;/&nbsp;<span class="num_count" id="numCount">10</span></div>-->
+
+            <!--</div>-->
+        <!--</div>-->
+
+        <!--<div class="layui-form-item">-->
+            <!--<label class="layui-form-label layui-required">haha：</label>-->
+            <!--<div class="layui-input-block">-->
+                <!--<textarea placeholder="你的意见 我们必认真对待" required name="desc" class="layui-textarea"></textarea>-->
+
+            <!--</div>-->
+        <!--</div>-->
+        <div class="adddemo"></div>
+        <div class="adddemo1"></div>
+        <div class="adddemoAll" style="opacity: 0.1"></div>
 
         <div class="layui-form-item">
             <div class="layui-input-block">
@@ -81,7 +108,7 @@
         </div>
 
     </form>
-    <div class="adddemo"></div>
+
 
 </div>
 <script src="./layui/layui.js"></script>
@@ -90,11 +117,11 @@
         let form = layui.form;
         let layer = layui.layer;
         let $ = layui.jquery;
+
         form.on('select(aihao1)', (data)=> {
-            console.log(data.value)
-            var list = [];
-            list.push(`<p class="lable">${data.value}</p>`);
-            $(".adddemo").append(list);
+            let address=data.value;
+            console.log(address);
+            $(".adddemo").text(address)
             // if(data.value==0){
             //     layer.msg('你选择了中文')
             //     console.log(data.value)
@@ -104,12 +131,26 @@
             //     console.log(data.value)
             // }
         });
-        form.on('radio(aihao2)', (data)=>{
-            // console.log(data.elem); //得到checkbox原始DOM对象
-            // console.log(data.elem.checked); //是否被选中，true或者false
-            console.log(data.value); //复选框value值，也可以通过data.elem.value得到
-            // console.log(data.othis); //得到美化后的DOM对象
+
+        form.on('select(aihao2)', (data)=>{
+            let address1=data.value;
+            console.log(address1);
+            $(".adddemo1").text(address1)
         });
+
+        form.on('submit(*)', function(data){
+            let adddemo=$('.adddemo').text();
+            let adddemo1=$('.adddemo1').text();
+            $('.adddemoAll').text(`${adddemo}${adddemo1}`);
+            let adddemoAll=$('.adddemoAll').text();
+            alert(adddemoAll);
+
+            return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+        });
+
+
+
+
         $(function () {
             window.wordLeg = function (obj) {
                 var currleg = $(obj).val().length;
