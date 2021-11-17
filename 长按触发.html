@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <style></style>
+</head>
+<body>
+<div class="content_body">
+    <button id="click">长按</button>
+    <div id="mydiv" style="width:100px; height:100px; background:#ddd;"></div>
+</div>
+<script src="jquery.min.js"></script>
+<script>
+    var timeout ;
+
+    $("#mydiv").touchstart(function() {
+        timeout = setTimeout(function() {
+            $("#mydiv").text("执行到其他事件");
+        },800);
+    });
+    $("#mydiv").touchmove(function() {
+        clearTimeout(timeout);
+        $("#mydiv").text("长按2秒执行其他事件1");
+    });
+
+    $("#mydiv").touchend(function() {
+        clearTimeout(timeout);
+        $("#mydiv").text("长按2秒执行其他事件2");
+    });
+
+
+</script>
+</body>
+</html>
