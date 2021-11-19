@@ -43,18 +43,32 @@
     // let newArr=[...new Set(arr1)];
     // console.log(newArr)
 
-    let arr = [ {"id": 1, tagName: "医疗"},{"id": 45, tagName: "口罩"},{"id": 45, tagName: "口罩"},{"id": 46, tagName: "口罩机"}, {"id": 47, tagName: "护目镜"}];
 
-    for(var i=0; i<arr.length; i++){
-        var item = arr[i]
-        for(var j = i+1; j<arr.length; j++){
-            if(item.id == arr[j].id){
-                arr.splice(j,1)
-                i--
-            }
-        }
-    };
-    console.log(arr);
+    let arr = [
+            {"id": 1, tagName: "医疗"},
+            {"id": 45, tagName: "口罩"},
+            {"id": 45, tagName: "口罩"},
+            {"id": 46, tagName: "口罩机"},
+            {"id": 47, tagName: "护目镜"}
+        ];
+    /**第一种普通方法**/
+    // for(var i=0; i<arr.length; i++){
+    //     var item = arr[i]
+    //     for(var j = i+1; j<arr.length; j++){
+    //         if(item.id == arr[j].id){
+    //             arr.splice(j,1)
+    //             i--
+    //         }
+    //     }
+    // };
+    // console.log(arr);
+
+    /**第二种es6的set（）方法**/
+    // 序列化去重
+    const noRepeat = [...new Set(arr.map(item => JSON.stringify(item)))];
+    // 反序列化
+    const newArr = noRepeat.map(item => JSON.parse(item));
+    console.log(newArr);
 
 
 

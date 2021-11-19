@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,10 +7,11 @@
 </head>
 <body>
 <div class="content_body">
-    <h1 class="h1"></h1>
-    <h1 class="h2"></h1>
-    <h1 class="h3"></h1>
-    <h1 class="h4"></h1>
+    <h5 class="h1"></h5>
+    <h5 class="h2"></h5>
+    <h5 class="h3"></h5>
+    <h5 class="h4"></h5>
+    <h5 class="h5"></h5>
 </div>
 <script src="jquery.min.js"></script>
 <script>
@@ -34,6 +35,13 @@
     let week=date.getDay();
     console.log(week);
     $('.content_body .h4').text(`星期${week}`);
+
+    //获取：时
+    // now.getHours()+":"+now.getMinutes()+":"+now.getSeconds()
+    let hour=date.getHours();
+    let minute=date.getMinutes();
+    let seconds=date.getSeconds()
+    $('.content_body .h5').text(`${hour}:${minute}:${seconds}`);
 
 
 
